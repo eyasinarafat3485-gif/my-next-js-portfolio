@@ -1,0 +1,62 @@
+[
+  {
+    "icon": "/all-svg/css3.webp",
+    "title": "Figma to HTML, CSS3",
+    "description": "I can convert a Figma or PSD design into a fully functional HTML and CSS (or Tailwind CSS) website. This guide provides a structured approach, but feel free to adapt it to your specific needs and workflow."
+  },
+  {
+    "icon": "/all-svg/react.svg",
+    "title": "Figma to React, NextJS",
+    "description": "I can convert a Figma or PSD design into a fully functional React and Next.js website. Let’s dive into the process and explore the best practices for converting your Figma or PSD designs into a polished React and Next.js website."
+  },
+  {
+    "icon": "/all-svg/res.svg",
+    "title": "Responsive Design",
+    "description": "With our knowledge in responsive design, you can improve the user experience on all devices. With our solutions, you can be sure that your website will adjust to any screen size and yet have a consistent and appealing experience."
+  },
+  {
+    "icon": "/all-svg/code.svg",
+    "title": "Web Design",
+    "description": "Using a minimalistic layout with lots of white space, making sure the website is responsive on all devices, and adding eye-catching graphics to provide an immersive experience are all essential components of creating a modern website design."
+  },
+  {
+    "icon": "/all-svg/dev.svg",
+    "title": "Web Development",
+    "description": "From developing static websites to dynamic web applications, I provide comprehensive web development services that cater to your business needs. I ensure your website is robust, scalable, and highly performant."
+  },
+  {
+    "icon": "/all-svg/vps_18726467.png",
+    "title": "VPS Deploy & Manage",
+    "description": "I provide full VPS deployment and management services, including server setup, SSL, domain configuration, security hardening, and performance monitoring. I also configure user deployment workflows with Docploy for smoother release management."
+  },
+  {
+    "icon": "/all-svg/web.svg",
+    "title": "Web & SaaS Application",
+    "description": "I build web applications that are fast, secure, and scalable. Whether you need a single-page application or a complex web platform, I have the expertise to deliver solutions that meet your requirements."
+  },
+  {
+    "icon": "/all-svg/w3c.svg",
+    "title": "W3C Validation",
+    "description": "Ensuring that your website adheres to W3C standards is crucial for accessibility and performance. I provide W3C validation services to ensure your site is fully compliant with web standards."
+  },
+  {
+    "icon": "/all-svg/backend.png",
+    "title": "Backend Development",
+    "description": "I offer backend development services to build the server-side logic and database management for your web applications. From RESTful APIs to microservices, I ensure your backend is efficient and scalable."
+  },
+ {
+    "icon": "/all-svg/wp.svg",
+    "title": "WordPress Customization",
+    "description": "I provide professional WordPress customization services, tailoring themes and plugins to match your brand identity. From layout tweaks to advanced functionality, I ensure your site looks and works exactly how you want it."
+  },
+  {
+    "icon": "/all-svg/elementor.webp",
+    "title": "Elementor Page Building",
+    "description": "Using Elementor and other modern page builders, I create visually stunning and highly interactive WordPress websites. I focus on creating pixel-perfect designs that are easy for you to manage and update in the future."
+  },
+  {
+    "icon": "/all-svg/wp-speed-with-text.svg",
+    "title": "WP Speed Optimization",
+    "description": "I specialize in improving WordPress loading speeds and performance scores. By optimizing images, minifying code, and configuring advanced caching, I ensure your visitors get a lightning-fast experience on every page."
+  }
+]
