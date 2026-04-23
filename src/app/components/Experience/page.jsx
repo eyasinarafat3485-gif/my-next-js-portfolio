@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 const Experience = () => {
     return (
-        <div className="py-16 px-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto  my-10 rounded-3xl">
+        <div className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto  my-10 rounded-3xl">
       {/* Header */}
       <div className="mb-8">
           <p className="text-[15px] font-bold tracking-widest uppercase text-gray-800">EXPERIENCE </p>

@@ -47,7 +47,7 @@ const CraftedProjects = () => {
     ]
     return (
        
-        <section id='projects' className="py-16 px-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl animat">
+        <section id='projects' className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl animat">
             {/* Header Part */}
             <div className="mb-12">
           

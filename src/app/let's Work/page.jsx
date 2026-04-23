@@ -3,8 +3,8 @@ import React from 'react';
 
 const LetsWork = () => {
   return (
-    <div id='contact' className="w-[92%] bg-gradient-to-br from-pink-100 via-slate-100 mx-auto my-10 rounded-3xl bg-gray-50 py-16 px-6 sm:px-6 lg:px-8 ">
-      <div className="max-auto max-w-6xl">
+    <div id='contact' className="w-[92%] bg-gradient-to-br from-pink-100 via-slate-100 mx-auto my-10 rounded-3xl bg-gray-50 p-6  ">
+      <div className="max-auto max-w-6xl ">
         {/* Header Section */}
         <div className="mb-10">
           <p className="text-red-500 font-semibold uppercase tracking-wide text-sm">Get In Touch</p>
@@ -27,35 +27,35 @@ const LetsWork = () => {
 
             <form className="space-y-5 text-sm">
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">Your Name *</label>
+                <label className="block text-gray-700 font-bold mb-2">Your Name *</label>
                 <input
                   type="name"
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50" />
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 mb-3" />
               </div>
 
 
-              <label className="block text-gray-700 font-semibold mb-2">Email Address *</label>
+              <label className="block text-gray-700 font-bold mb-2">Email Address *</label>
               <div>
                 <input type="email" name='email' placeholder="john@example.com"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50" required />
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 mb-3" required />
               </div>
 
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">Subject *</label>
+                <label className="block text-gray-700 font-bold mb-2">Subject *</label>
                 <input
                   type="text"
                   placeholder="Project Discussion"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 mb-3"
                 />
               </div>
 
               <div>
-                <label className="block text-gray-700 font-semibold mb-2">Your Message *</label>
+                <label className="block text-gray-700 font-bold mb-2">Your Message *</label>
                 <textarea
                   rows="4"
                   placeholder="Tell me about your project..."
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 resize-none mb-3"
                 ></textarea>
               </div>
 

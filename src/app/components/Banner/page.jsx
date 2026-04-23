@@ -2,9 +2,10 @@ import React from 'react';
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import myImg from '../../../assets/Eyasin portfolio.png'
 import { Download, ArrowRight } from 'lucide-react';
-import { IoLogoWhatsapp } from 'react-icons/io';
+import { IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io';
 import Image from 'next/image';
 import SkillsCarousel from './Skills';
+import { RiLinkedinLine } from 'react-icons/ri';
 
 
 const Banner = () => {
@@ -24,7 +25,7 @@ const Banner = () => {
                 <div className='flex gap-4 text-center md:text-left md:w-full items-center w-[80%] md:items-start mx-auto'>
                     <p className='font-semibold'>Connect :</p>
                     <div className='flex text-center gap-3 md:gap-4 align-center '>
-                        <a href="https://www.linkedin.com/in/md-eyasin-arafat-webdev"><FaLinkedin className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 bg-gray-200 hover-3d hover:bg-red-500 hover:text-white'></FaLinkedin    ></a>
+                        <a href="https://www.linkedin.com/in/md-eyasin-arafat-webdev"><FaLinkedin   className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 bg-gray-200 hover-3d hover:bg-red-500 hover:text-white'></FaLinkedin       ></a>
 
                         <a href="https://github.com/eyasinarafat3485-gif"><FaGithub className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 bg-gray-200 hover-3d hover:bg-red-500 hover:text-white'></FaGithub></a>
 

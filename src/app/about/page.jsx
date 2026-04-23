@@ -16,7 +16,7 @@ const AboutMe = () => {
 
     const infoData = [
         { label: "Name", value: "Eyasin Arafat" },
-        { label: "Birthday", value: "21 February" },
+        { label: "Birthday", value: "21 Feb 2005" },
         { label: "Job", value: "Full Stack Developer" },
         { label: "Email", value: "eyasinwebdev@gmail.com" },
         { label: "Nick Name", value: "Eyasin" },

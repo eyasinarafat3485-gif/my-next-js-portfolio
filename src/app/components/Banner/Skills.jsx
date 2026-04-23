@@ -121,7 +121,7 @@ function SkillCard({ skill, onHover, isDragging }) {
                     : "#e2e8f0"
             }}
         >
-            <div className="flex flex-col items-center justify-center h-[90px] md:h-[150px] w-full bg-white rounded-[10px] md:rounded-[14px] transition-all duration-300 relative overflow-hidden border border-gray-50 md:border-none shadow-sm md:shadow-none">
+            <div className="flex flex-col items-center justify-center h-[90px] md:h-[150px] w-full bg-white rounded-[14px] md:rounded-[14px] transition-all duration-300 relative overflow-hidden border border-gray-50 md:border-none shadow-sm md:shadow-none">
 
                 {/* Percentage Count - Mobile-e Top-Right corner-e kora hoyeche */}
                 {hovered && !isDragging && (

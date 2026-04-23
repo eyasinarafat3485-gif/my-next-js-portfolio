@@ -7,7 +7,7 @@ const Service = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id='services' className="py-16 px-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl">
+    <section id='services' className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl">
       <div className="object-contain mx-auto">
         {/* Section Heading */}
         <div className="mb-8">
@@ -30,7 +30,7 @@ const Service = () => {
             >
               {/* Icon Circle */}
               <div
-                className={`w-12 h-12 absolute -top-8 left-1/4 -translate-x-1/2 rounded-full flex items-center justify-center transition-all duration-300 
+                className={`w-12 h-12 absolute -top-6 left-1/4 -translate-x-1/2 rounded-full flex items-center justify-center transition-all duration-300 
                   ${hoveredIndex === index ? "bg-white ring-2 ml-21 ring-red-500" : "bg-red-500"}`}
               >
                 {/* Fixed width and height here */}

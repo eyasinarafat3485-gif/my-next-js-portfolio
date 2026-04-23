@@ -24,13 +24,13 @@ const Footer = () => {
 
         {/* Right Side: Navigation Links */}
         <div className="flex-1 flex justify-center md:justify-end gap-6 font-medium ">
-          <Link href="/" className="hover:text-red-500 transition-colors duration-200">
+          <Link href="/" className="hover:text-red-600 transition-colors duration-200">
             Home
           </Link>
-          <Link href="#about" className="hover:text-red-500 transition-colors duration-200">
+          <Link href="#about" className="hover:text-red-600 transition-colors duration-200">
             About
           </Link>
-          <Link href="#contact" className="hover:text-red-500 transition-colors duration-200">
+          <Link href="#contact" className="hover:text-red-600 transition-colors duration-200">
             Contact
           </Link>
         </div>
