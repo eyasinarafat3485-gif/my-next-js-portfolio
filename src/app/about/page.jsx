@@ -8,6 +8,19 @@ import Image from 'next/image';
 // }
 
 const AboutMe = () => {
+    const handleDownloadCv = () => {
+        const cvUrl = "/Full Stack Dev .pdf"; 
+
+        const link = document.createElement("a");
+        link.href = cvUrl;
+
+        link.setAttribute("download", "Eyasin_Arafat_CV.pdf");
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     const [isExpanded, setIsExpanded] = useState(false);
 
     const introductoryText = " Hi Everyone, This is Eyasin Arafat — a Full Stack Developer. My love for technology goes beyond profession; it is a part of who I am. On the frontend, I weave responsive and vibrant user interfaces using React, TypeScript, and Tailwind CSS—where beauty is not just seen, but felt."
@@ -50,7 +63,7 @@ const AboutMe = () => {
                     </div>
 
                     {/* Download Button */}
-                    <button className="m-5 bg-red-500 cursor-pointer text-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-600 transition-all shadow-lg ml-8 shadow-orange-600 ">
+                    <button onClick={handleDownloadCv} className="m-5 bg-red-500 cursor-pointer text-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-600 transition-all shadow-lg ml-8 shadow-orange-600 ">
                         Download CV
                     </button>
                 </div>

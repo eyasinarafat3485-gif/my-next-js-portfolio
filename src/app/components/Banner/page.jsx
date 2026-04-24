@@ -1,14 +1,28 @@
+'use client'
 import React from 'react';
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import myImg from '../../../assets/Eyasin portfolio.png'
 import { Download, ArrowRight } from 'lucide-react';
-import { IoLogoLinkedin, IoLogoWhatsapp } from 'react-icons/io';
+import { IoLogoWhatsapp } from 'react-icons/io';
 import Image from 'next/image';
 import SkillsCarousel from './Skills';
-import { RiLinkedinLine } from 'react-icons/ri';
-
 
 const Banner = () => {
+    
+    const handleDownloadCv = () => {
+        const cvUrl = "/Full Stack Dev .pdf"; 
+
+        const link = document.createElement("a");
+        link.href = cvUrl;
+
+        link.setAttribute("download", "Eyasin_Arafat_CV.pdf");
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    
+
     return (
         <main className='w-full bg-white pt-10 md:py-10'>
             {/* Banner Left */}
@@ -38,7 +52,7 @@ const Banner = () => {
 
             {/* Banner Middle */}
             <div className='bannerMiddle w-[80%] order-1 md:order-2 md:w-[40%] mx-auto'>
-                <Image src={myImg} alt="" />
+                <Image src={myImg} alt="Eyasin" />
             </div>
 
             {/* Banner Right */}
@@ -50,11 +64,13 @@ const Banner = () => {
                 <div className='mt-8 space-x-5'>
                     <button className="btn btn-secondary bg-red-500 rounded-full text-[17px] hover:focus-within:-translate-y-1 hover:bg-red-600 transition-all shadow-lg">View My Work <ArrowRight></ArrowRight> </button>
 
-                    <button className="btn btn-outline  bg-white text-black rounded-full hover:border-2 border-red-400"><Download></Download> Download CV</button>
+                    {/* Button with OnClick */}
+                    <button onClick={handleDownloadCv} className="btn btn-outline  bg-white text-black rounded-full hover:border-2 border-red-400">
+                        <Download /> Download CV
+                    </button>
                 </div>
             </div>
             
-
             </div>
             <div>
                 <SkillsCarousel />
