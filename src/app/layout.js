@@ -19,10 +19,10 @@ export const metadata = {
   description: "Portfolio of Eyasin Arafat",
   icons: {
     icon: [
-      { url: "/EA-favicon.png" },
+      { url: "/ea.jpg" },
     ],
     apple: [
-      { url: "/EA-favicon.png" },
+      { url: "/ea.jpg" },
     ],
   },
 };
