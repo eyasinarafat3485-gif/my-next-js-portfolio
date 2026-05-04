@@ -6,10 +6,10 @@ import { BiMenu, BiX, BiHomeAlt, BiUser, BiCodeBlock, BiBriefcase, BiPhone } fro
 
 const navLinks = [
   { id: 1, name: "Home", path: "/", icon: <BiHomeAlt /> },
-  { id: 2, name: "About", path: "/about", icon: <BiUser /> },
-  { id: 3, name: "Services", path: "/services", icon: <BiCodeBlock /> },
-  { id: 4, name: "Projects", path: "/projects", icon: <BiBriefcase /> },
-  { id: 5, name: "Contact", path: "/contact", icon: <BiPhone /> }
+  { id: 2, name: "About", path: "/#about", icon: <BiUser /> },
+  { id: 3, name: "Services", path: "/#services", icon: <BiCodeBlock /> },
+  { id: 4, name: "Projects", path: "/#projects", icon: <BiBriefcase /> },
+  { id: 5, name: "Contact", path: "/#contact", icon: <BiPhone /> }
 ];
 
 const Navbar = () => {
@@ -28,12 +28,6 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-
-    // h-20 ফিক্সড হাইট দেওয়া হয়েছে যেন নিচের সেকশনে ক্যালকুলেট করা সহজ হয়
-    // <nav className={`sticky left-0 w-full h-20 z-[100] flex items-center transition-all duration-500 ease-in-out ${
-    //   scrolled ? ' ' : 'bg-transparent'
-    // }`}>
-
     <nav className={`sticky left-0 w-full h-20 z-[100] flex items-center transition-all duration-500 ease-in-out ${scrolled ? '' : 'bg-transparent'
       }`}>
       <div className='relative z-10 flex justify-between items-center w-full max-w-7xl mx-auto px-4 md:px-12'>

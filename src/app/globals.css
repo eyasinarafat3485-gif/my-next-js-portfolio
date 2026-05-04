@@ -1,8 +1,5 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* Scroll korar somoy jate Navbar-er height tuku faka thake */
-section {
-  scroll-margin-top: 80px; /* Apnar Navbar height onujayi (dhorun 80px) */
-}
+
 
