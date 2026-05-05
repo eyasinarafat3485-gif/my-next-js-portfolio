@@ -2,7 +2,7 @@
 
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 const projects = [
   {
@@ -46,8 +46,9 @@ const RecentProjects = () => {
   const loopProjects = [...projects, ...projects];
 
   return (
-    <section className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl animat overflow-hidden">
+    <section id='projects' className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl animat overflow-hidden">
       <div className="container mx-auto">
+        
         {/* Header Section */}
         <div className="flex justify-between items-end mb-12">
           <div>
@@ -61,7 +62,6 @@ const RecentProjects = () => {
           </button>
         </div>
 
-        {/* Carousel Section */}
         {/* Carousel Section */}
         <div className="relative">
           <div className="carousel-track flex w-max gap-6 py-4 cursor-grab">

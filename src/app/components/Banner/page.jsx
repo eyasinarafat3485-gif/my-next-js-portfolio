@@ -9,6 +9,8 @@ import SkillsCarousel from './Skills';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import DownloadButton from '../DownloadButton';
+import ViewWorkButton from '../ViewWorkButton';
+import Link from 'next/link';
 
 const Banner = () => {
     return (
@@ -97,7 +99,7 @@ const Banner = () => {
                     <p className='text-[18px] md:text-[22px] '>and modern technologies.Transforming ideas into scalable digital solutions.</p>
 
                     <div className='mt-8 space-x-5 flex'>
-                        <button className="btn btn-secondary bg-red-500 rounded-full text-[17px] hover:focus-within:-translate-y-1 hover:bg-red-600 transition-all shadow-lg">View My Work <ArrowRight></ArrowRight> </button>
+                       <Link href='/projects' ><ViewWorkButton /> </Link>
                         <DownloadButton />
                     </div>
                 </div>

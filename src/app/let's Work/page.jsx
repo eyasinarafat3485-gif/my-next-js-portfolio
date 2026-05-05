@@ -61,7 +61,7 @@ const LetsWork = () => {
 
               <button
                 type="submit"
-                className="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-4 rounded-full transition-colors duration-300 shadow-md cursor-pointer"
+                className="w-full bg-red-500 hover:bg-red-600 text-white text-xl font-bold py-3.5 rounded-full transition-colors duration-300 shadow-md cursor-pointer"
               >
                 Send Message
               </button>
