@@ -1,17 +1,12 @@
-// "use client";
+'use client'
+import { ReactLenis } from 'lenis/react'
 
-// import { ReactLenis } from '@lenis/react';
+function SmoothScrolling({ children }) {
+  return (
+    <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}>
+      {children}
+    </ReactLenis>
+  )
+}
 
-// function SmoothScroll({ children }) {
-//   return (
-//     <ReactLenis root options={{ 
-//         lerp: 0.1, 
-//         duration: 1.5, 
-//         smoothTouch: true 
-//     }}>
-//       {children}
-//     </ReactLenis>
-//   );
-// }
-
-// export default SmoothScroll;
+export default SmoothScrolling

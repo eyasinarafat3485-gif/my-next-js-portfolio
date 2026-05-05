@@ -2,7 +2,8 @@
 @plugin "daisyui";
 
 
-/* html.lenis {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -21,4 +22,3 @@
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
- */
