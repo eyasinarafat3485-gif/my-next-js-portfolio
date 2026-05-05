@@ -11,21 +11,6 @@ import { TypeAnimation } from 'react-type-animation';
 import DownloadButton from '../DownloadButton';
 
 const Banner = () => {
-
-    // const handleDownloadCv = () => {
-    //     const cvUrl = "/Full Stack Dev .pdf";
-
-    //     const link = document.createElement("a");
-    //     link.href = cvUrl;
-
-    //     link.setAttribute("download", "Eyasin_Arafat_CV.pdf");
-
-    //     document.body.appendChild(link);
-    //     link.click();
-    //     document.body.removeChild(link);
-    // };
-
-
     return (
         <main className='relative z-10 w-full pt-10 md:pt-2 md:pb-10'>
             {/* Banner Left */}
@@ -113,11 +98,6 @@ const Banner = () => {
 
                     <div className='mt-8 space-x-5 flex'>
                         <button className="btn btn-secondary bg-red-500 rounded-full text-[17px] hover:focus-within:-translate-y-1 hover:bg-red-600 transition-all shadow-lg">View My Work <ArrowRight></ArrowRight> </button>
-
-                        {/* Button with OnClick */}
-                        {/* <button onClick={handleDownloadCv} className="btn btn-outline  bg-white text-black rounded-full hover:border-2 border-red-400">
-                            <Download /> Download CV
-                        </button> */}
                         <DownloadButton />
                     </div>
                 </div>
