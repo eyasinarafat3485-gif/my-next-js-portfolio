@@ -99,7 +99,7 @@ const Banner = () => {
                     <p className='text-[18px] md:text-[22px] '>and modern technologies.Transforming ideas into scalable digital solutions.</p>
 
                     <div className='mt-8 space-x-5 flex'>
-                       <Link href='/projects' ><ViewWorkButton /> </Link>
+                       <Link href='/#projects' ><ViewWorkButton /> </Link>
                         <DownloadButton />
                     </div>
                 </div>

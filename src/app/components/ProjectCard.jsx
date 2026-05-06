@@ -21,7 +21,7 @@ function ProjectCard({ project }) {
           />
 
           {/* Overlay */}
-          <div className={`absolute inset-0 flex flex-col justify-end bg-black/50 p-8 text-white transition-all duration-200 ease-out ${hovered ? "opacity-100" : "opacity-0"}`}>
+          <div className={`absolute inset-0 flex flex-col justify-end bg-black/65 p-8 text-white transition-all duration-200 ease-out ${hovered ? "opacity-100" : "opacity-0"}`}>
 
             <div className={`transform transition-transform duration-200 ease-out ${hovered ? "translate-y-0" : "translate-y-3"}`}>
               <h3 className="text-xl font-bold mb-1">

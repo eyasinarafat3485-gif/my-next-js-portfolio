@@ -22,3 +22,32 @@ html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+.cursor-dot {
+  padding: 5px; 
+  width: 33px; 
+  height: 33px;
+  
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border: 1px solid rgba(255, 0, 0, 1); 
+  background: transparent;
+
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor-dot::after {
+  content: "";
+  width: 6px; 
+  height: 6px;
+  background-color: rgba(255, 0, 0, 1); 
+  border-radius: 50%;
+}

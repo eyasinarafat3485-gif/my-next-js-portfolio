@@ -4,6 +4,7 @@ import Navbar from "./components/shared/Navbar";
 import Footer from "./components/shared/Footer";
 import MotionWrapper from "./components/MotionWrapper";
 import SmoothScrolling from "./components/SmoothScroll";
+import CursorFollower from "./components/CursorFollower";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <SmoothScrolling >
           <MotionWrapper>
+            <CursorFollower />
             <Navbar />
 
             <main>{children}</main>
