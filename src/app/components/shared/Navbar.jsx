@@ -34,8 +34,11 @@ const Navbar = () => {
 
         {/* Logo Section */}
         <div className='flex items-center gap-3'>
-          <Link href="/" onClick={() => setActivePath("/")} className='bg-red-500 rounded-full w-10 h-10 flex items-center justify-center text-white font-bold shrink-0'>
-            EA
+          <Link
+            href="/"
+            onClick={() => setActivePath("/")}
+            className="flex items-center justify-center shadow-lg shadow-red-500/30 transition-all duration-300 hover:scale-105 shrink-0">
+            <img src="/Ea-logo.png" alt="EA Logo" className="w-7 h-7 object-contain" />
           </Link>
           <Link href="/" onClick={() => setActivePath("/")} className='text-xl font-bold tracking-tight text-gray-800 uppercase truncate'>
             Eyasin Arafat

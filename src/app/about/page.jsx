@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const AboutMe = () => {
     const handleDownloadCv = () => {
-        const cvUrl = "/Full Stack Dev .pdf"; 
+        const cvUrl = "/Full Stack Dev .pdf";
 
         const link = document.createElement("a");
         link.href = cvUrl;
@@ -63,8 +63,26 @@ const AboutMe = () => {
                     </div>
 
                     {/* Download Button */}
-                    <button onClick={handleDownloadCv} className="m-5 bg-red-500 cursor-pointer text-white px-6 py-2.5 rounded-full font-semibold hover:bg-red-600 transition-all shadow-lg ml-8 shadow-orange-600 ">
-                        Download CV
+                    <button onClick={handleDownloadCv} className=" relative inline-flex items-center justify-center p-[2px] rounded-full overflow-hidden group ml-8 m-5 cursor-pointer">
+
+                        {/* Animated Red Gradient Border */}
+                        <span className=" absolute inset-0 rounded-full bg-[conic-gradient(from_180deg,#ea580c,#fdba74,#f97316,#ea580c)] animate-[spin_4s_linear_infinite] opacity-90 group-hover:opacity-100 blur-[0.4px]"></span>
+
+                        {/* Soft Red Glow */}
+                        <span
+                            className="absolute inset-0rounded-full bg-red-500/20 blur-2xlopacity-0group-hover:opacity-100transition-all duration-500"></span>
+
+                        {/* Button Content */}
+                        <span
+                            className=" relative z-10 flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-red-600 to-red-500 border-2 text-white font-bold tracking-wide transition-all duration-300 group-hover:scale-[1.05] group-hover:from-red-500 group-hover:to-red-600 active:scale-95 shadow-[0_12px_35px_rgba(220,38,38,0.45)]">
+
+                            {/* Icon */}
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" />
+                            </svg>
+
+                            Download CV
+                        </span>
                     </button>
                 </div>
 

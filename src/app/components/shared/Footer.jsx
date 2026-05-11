@@ -178,7 +178,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[12px] text-white/50 font-light tracking-wide">
-            © 2025 <span className="text-orange-400 font-normal">Eyasin Arafat</span> — All rights reserved.
+            © 2026 <span className="text-orange-400 font-normal">Eyasin Arafat</span> — All rights reserved.
           </p>
 
           <div className="flex items-center gap-2 text-[12px] text-white/55">

@@ -1,22 +1,23 @@
 "use client"
 import { useEffect, useRef, useState } from "react";
-import {
-    Code2, Globe, Layers, Database, Cpu, Layout, FileCode,
-    Terminal, GitBranch, Monitor, MessagesSquare, Blocks, Server
-} from "lucide-react";
+import { MessagesSquare } from "lucide-react";
+import { FaElementor, FaGit, FaJs, FaNodeJs, FaReact, FaWordpress } from "react-icons/fa";
+import { FaCss } from "react-icons/fa6";
+import { RiNextjsFill } from "react-icons/ri";
+import { DiMongodb } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
 
-// ডাটা ভ্যালু ফিক্সড এবং স্টেপ বাই স্টেপ সাজানো
 const Skills = [
-    { name: "Tailwind & Css3", percent: 100, icon: <Layout size={32} /> },
-    { name: "JavaScript", percent: 90, icon: <Cpu size={32} /> },
-    { name: "React js", percent: 100, icon: <Code2 size={32} /> },
-    { name: "Next js", percent: 85, icon: <Blocks size={32} /> },
-    { name: "Node.js", percent: 100, icon: <Terminal size={32} /> },
-    { name: "Express js", percent: 85, icon: <Server size={32} /> },
-    { name: "MongoDB", percent: 85, icon: <Database size={32} /> },
-    { name: "Git", percent: 100, icon: <GitBranch size={32} /> },
-    { name: "WordPress", percent: 95, icon: <Globe size={32} /> },
-    { name: "Elementor", percent: 95, icon: <Layers size={32} /> },
+    { name: "Tailwind & Css3", percent: 100, icon: <FaCss size={32} /> },
+    { name: "JavaScript", percent: 90, icon: <FaJs size={32} /> },
+    { name: "React js", percent: 100, icon: <FaReact size={32} /> },
+    { name: "Next js", percent: 90, icon: <RiNextjsFill size={32} /> },
+    { name: "Node.js", percent: 100, icon: <FaNodeJs size={32} /> },
+    { name: "Express js", percent: 85, icon: <SiExpress size={32} /> },
+    { name: "MongoDB", percent: 95, icon: <DiMongodb size={32} /> },
+    { name: "Git", percent: 100, icon: <FaGit size={32} /> },
+    { name: "WordPress", percent: 95, icon: <FaWordpress size={32} /> },
+    { name: "Elementor", percent: 95, icon: <FaElementor size={32} /> },
     { name: "Communication", percent: 80, icon: <MessagesSquare size={32} /> },
 ];
 
@@ -32,10 +33,7 @@ export default function SkillsCarousel() {
         let animationFrame;
         const animate = () => {
             if (containerRef.current && !isPausedRef.current && !isDragging) {
-                // অটো স্ক্রলিং স্পিড ০.৮ পিক্সেল
                 scrollPosRef.current += 0.8;
-
-                // ইনফিনিট স্ক্রলিং লজিক
                 if (scrollPosRef.current >= containerRef.current.scrollWidth / 3) {
                     scrollPosRef.current = 0;
                 }
@@ -56,7 +54,6 @@ export default function SkillsCarousel() {
 
     const handleMouseUpOrLeave = () => {
         setIsDragging(false);
-        // মাউস ছেড়ে দিলে বর্তমান পজিশন থেকে অটো স্ক্রল শুরু হবে
         if (containerRef.current) {
             scrollPosRef.current = containerRef.current.scrollLeft;
         }
@@ -66,7 +63,7 @@ export default function SkillsCarousel() {
         if (!isDragging) return;
         e.preventDefault();
         const x = e.pageX - containerRef.current.offsetLeft;
-        const walk = (x - startXRef.current) * 1.5; // ড্র্যাগিং স্পিড
+        const walk = (x - startXRef.current) * 1.5;
         containerRef.current.scrollLeft = scrollLeftRef.current - walk;
     };
 
@@ -123,25 +120,25 @@ function SkillCard({ skill, onHover, isDragging }) {
         >
             <div className="flex flex-col items-center justify-center h-[90px] md:h-[150px] w-full bg-white rounded-[14px] md:rounded-[14px] transition-all duration-300 relative overflow-hidden border border-gray-50 md:border-none shadow-sm md:shadow-none">
 
-                {/* Percentage Count - Mobile-e Top-Right corner-e kora hoyeche */}
+                {/* Percentage Count */}
                 {hovered && !isDragging && (
                     <span className="absolute top-1 right-2 md:static md:bottom-3 text-[10px] md:text-xl font-black text-red-600 animate-pulse">
                         {count}%
                     </span>
                 )}
 
-                {/* Icon Container - Mobile-e padding ebong size komano hoyeche */}
+                {/* Icon Container */}
                 <div
                     className={`p-1.5 md:p-3 rounded-lg md:rounded-xl mb-1 md:mb-3 transition-all duration-500 ${hovered && !isDragging ? 'bg-red-50 scale-105 md:scale-110 text-red-600' : 'text-slate-600'
                         }`}
                 >
-                    {/* Icon size logic */}
+                    {/* Icon */}
                     <div className="text-lg md:text-3xl">
                         {skill.icon}
                     </div>
                 </div>
 
-                {/* Skill Name - Mobile-e aro compact text */}
+                {/* Skill Name */}
                 <span className={`text-[9px] md:text-[12px] font-bold uppercase tracking-wider transition-colors duration-300 ${hovered && !isDragging ? 'text-red-600' : 'text-slate-500'
                     }`}>
                     {skill.name}
