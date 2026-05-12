@@ -3,15 +3,15 @@ import React from 'react';
 
 const LetsWork = () => {
   return (
-    <div id='contact' className="w-[92%] bg-gradient-to-br from-pink-100 via-slate-100 mx-auto my-10 rounded-3xl bg-gray-50 p-6  ">
+    <div id='contact' className="w-[92%] bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 mx-auto my-10 rounded-3xl p-6  ">
       <div className="max-auto max-w-6xl ">
         {/* Header Section */}
         <div className="mb-10">
-          <p className="text-red-500 font-semibold uppercase tracking-wide text-sm">Get In Touch</p>
-          <h1 className="text-4xl font-bold text-gray-900 mt-2">
+          <p className="text-orange-500 dark:text-orange-500 font-semibold uppercase tracking-wide text-sm">Get In Touch</p>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white light:text-black mt-2 ">
             Let,s Work <span className="text-red-500">Together</span>
           </h1>
-          <p className="text-gray-600 mt-4 text-lg">
+          <p className="text-gray-600 dark:text-white light:text-black mt-4 text-lg">
             Have a MERN, Wordpress or web development project in mind? Feel free to reach out
           </p>
         </div>

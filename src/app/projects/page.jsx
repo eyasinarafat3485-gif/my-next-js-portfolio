@@ -46,18 +46,18 @@ const RecentProjects = () => {
   const loopProjects = [...projects, ...projects];
 
   return (
-    <section id='projects' className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl animat overflow-hidden">
+    <section id='projects' className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 w-[92%] mx-auto my-10 rounded-3xl animat overflow-hidden">
       <div className="container mx-auto">
         
         {/* Header Section */}
         <div className="flex justify-between items-end mb-12">
           <div>
-            <span className="text-red-500 font-bold uppercase tracking-widest text-sm">Portfolio</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
+            <span className="text-red-500 dark:text-orange-500 font-bold uppercase tracking-widest text-sm">Portfolio</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">
               Recent <span className="text-red-500">Projects</span>
             </h2>
           </div>
-          <button className="hidden md:flex items-center gap-2 border-2 border-red-500 text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition-all cursor-pointer duration-300">
+          <button className="hidden md:flex items-center gap-2 border-2 border-red-500 dark:bg-black dark:text-white text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition-all cursor-pointer duration-300">
             View all <FiArrowUpRight />
           </button>
         </div>

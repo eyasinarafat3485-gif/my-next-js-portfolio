@@ -37,7 +37,7 @@ const Banner = () => {
                                 👋
                             </motion.span>
                         </h3>
-                        <h1 className="text-4xl md:text-5xl font-bold text-gray-500 tracking-tight">
+                        <h1 className="text-4xl md:text-5xl font-bold text-gray-500 dark:text-orange-500  tracking-tight">
                             Eyasin Arafat
                         </h1>
 

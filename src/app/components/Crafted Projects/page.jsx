@@ -45,7 +45,7 @@ const CraftedProjects = () => {
     ];
 
     return (
-        <section className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl">
+        <section className="p-6 bg-gradient-to-br bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 w-[92%] mx-auto my-10 rounded-3xl">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -53,11 +53,11 @@ const CraftedProjects = () => {
                 transition={{ duration: 0.6 }}
                 className="mb-12"
             >
-                <p className="text-[15px] font-bold tracking-widest uppercase text-gray-800">My previous</p>
+                <p className="text-[15px] font-bold tracking-widest uppercase text-gray-800 dark:text-orange-500 ">My previous</p>
                 <h2 className="text-3xl md:text-4xl font-bold mt-2">
                     Crafted <span className="text-red-500">Projects</span>
                 </h2>
-                <p className="text-gray-500 mt-4 max-w-2xl text-[18px]">
+                <p className="text-gray-500 dark:text-white mt-4 max-w-2xl text-[18px]">
                     A focused collection of MERN stack and full-stack web development projects...
                 </p>
             </motion.div>

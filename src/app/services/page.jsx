@@ -7,11 +7,11 @@ const Service = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section id='services' className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 w-[92%] mx-auto my-10 rounded-3xl">
+    <section id='services' className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 w-[92%] mx-auto my-10 rounded-3xl">
       <div className="object-contain mx-auto">
         {/* Section Heading */}
         <div className="mb-8">
-          <p className="text-[15px] font-bold tracking-widest uppercase text-gray-800">
+          <p className="text-[15px] font-bold tracking-widest uppercase text-gray-800 dark:text-orange-500 ">
             Services
           </p>
           <h2 className="text-3xl md:text-4xl font-bold mt-2">
