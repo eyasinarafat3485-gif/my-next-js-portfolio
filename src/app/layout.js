@@ -5,6 +5,7 @@ import Footer from "./components/shared/Footer";
 import MotionWrapper from "./components/MotionWrapper";
 import SmoothScrolling from "./components/SmoothScroll";
 import CursorFollower from "./components/CursorFollower";
+import NextThemeProvider from "@/providers/NextThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,10 +35,18 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme="light dark"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
-        <SmoothScrolling >
+      <body className="bg-white
+text-black
+
+dark:bg-black
+dark:text-white
+
+transition-all
+duration-300 min-h-full flex flex-col bg-background text-foreground">
+        <NextThemeProvider>
+          <SmoothScrolling >
           <MotionWrapper>
             <CursorFollower />
             <Navbar />
@@ -47,6 +56,7 @@ export default function RootLayout({ children }) {
           </MotionWrapper>
           <Footer />
         </SmoothScrolling>
+        </NextThemeProvider>
       </body>
     </html>
   );

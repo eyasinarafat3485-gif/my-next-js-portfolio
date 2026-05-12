@@ -68,8 +68,7 @@ export default function SkillsCarousel() {
     };
 
     return (
-        <section className="w-[92%] mx-auto bg-slate-50 overflow-hidden select-none">
-
+        <section className="w-[92%] mx-auto dark:bg-black bg-slate-50 overflow-hidden select-none">
             <div
                 ref={containerRef}
                 onMouseDown={handleMouseDown}

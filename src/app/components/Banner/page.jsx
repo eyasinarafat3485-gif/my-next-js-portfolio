@@ -62,16 +62,16 @@ const Banner = () => {
                     <div className='flex gap-4 text-center md:text-left md:w-full items-center w-[80%] md:items-start mx-auto'>
                         <p className='font-semibold'>Connect :</p>
                         <div className='flex text-center gap-3 md:gap-4 align-center '>
-                            <a href="https://www.linkedin.com/in/md-eyasin-arafat-webdev"><FaLinkedin className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 bg-gray-200 hover-3d hover:bg-[#0077B5] hover:text-white  hover:scale-130
+                            <a href="https://www.linkedin.com/in/md-eyasin-arafat-webdev"><FaLinkedin className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500  dark:text-black bg-gray-200 hover-3d hover:bg-[#0077B5] hover:text-white  hover:scale-130
                             hover:-translate-y-1'></FaLinkedin ></a>
 
-                            <a href="https://github.com/eyasinarafat3485-gif"><FaGithub className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 bg-gray-200 hover-3d hover:bg-black hover:text-white  hover:scale-130
+                            <a href="https://github.com/eyasinarafat3485-gif"><FaGithub className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover-3d hover:bg-black hover:text-white  hover:scale-130
                             hover:-translate-y-1'></FaGithub></a>
 
-                            <a href="https://www.facebook.com/share/14QVNWQSDuN/"><FaFacebook className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 bg-gray-200 hover-3d hover:bg-[#1877F2] hover:text-white  hover:scale-130
+                            <a href="https://www.facebook.com/share/14QVNWQSDuN/"><FaFacebook className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover-3d hover:bg-[#1877F2] hover:text-white  hover:scale-130
                             hover:-translate-y-1'></FaFacebook> </a>
 
-                            <a href="https://wa.me/8801960421858"><IoLogoWhatsapp className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 bg-gray-200 hover-3d hover:bg-[#25D366] hover:text-white  hover:scale-130
+                            <a href="https://wa.me/8801960421858"><IoLogoWhatsapp className='transition: 0.3s w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover-3d hover:bg-[#25D366] hover:text-white  hover:scale-130
                             hover:-translate-y-1'></IoLogoWhatsapp > </a>
                         </div>
                     </div>
