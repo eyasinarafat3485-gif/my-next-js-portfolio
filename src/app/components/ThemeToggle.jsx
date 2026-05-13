@@ -21,7 +21,7 @@ const ThemeToggle = () => {
       onClick={() =>
         setTheme(theme === "dark" ? "light" : "dark")
       }
-      className=" p-2 rounded-md bg-white/80 dark:bg-white/90 backdrop-blur-md border-2 border-red-500/70 dark:border-black/70
+      className=" p-2 rounded-md md:rounded-full bg-white/80 dark:bg-white/90 backdrop-blur-md border-2 border-red-500/70 dark:border-black/70
    hover:ring-4 hover:ring-blue-500/20 text-black dark:text-red-500
     transition-all duration-200  hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]  active:scale-95  cursor-pointer">
       {theme === "dark" ? <AiFillSun /> : <FaMoon />}

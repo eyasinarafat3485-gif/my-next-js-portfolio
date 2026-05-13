@@ -112,7 +112,6 @@ const AboutMe = () => {
                             </span>
                         </p>
 
-
                         <button
                             onClick={() => setIsExpanded(!isExpanded)}
                             className="mt-2 bg-[#FF5A5F] text-white px-5 py-1 rounded-full font-semibold md:hidden">

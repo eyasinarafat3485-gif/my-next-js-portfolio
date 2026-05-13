@@ -71,7 +71,7 @@ const Footer = () => {
                 { icon: <FaGithub />, label: 'GitHub', link: 'https://github.com/eyasinarafat3485-gif' },
                 { icon: <FaLinkedinIn />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/md-eyasin-arafat-webdev' },
                 { icon: <FaFacebookF />, label: 'Facebook', link: 'https://www.facebook.com/share/14QVNWQSDuN/' },
-                { icon: <MdEmail />, label: 'Email', link: 'eyasinwebdev@gmail.com' } // Shudhu email address
+                { icon: <MdEmail />, label: 'Email', link: 'eyasinwebdev@gmail.com' }
               ].map((social, i) => (
                 <a
                   key={i}
@@ -91,7 +91,8 @@ const Footer = () => {
                 </a>
               ))}
             </div>
-            {/* --- UP ARROW BUTTON ADDED HERE --- */}
+            
+            {/* --- UP ARROW BUTTON --- */}
             <button
               onClick={scrollToTop}
               className="absolute -right-4 bottom-0 md:right-0 w-10 h-10 rounded-full border border-orange-400 flex items-center justify-center font-bold text-white hover:text-orange-500 hover:border-[#dc1c1c] bg-red-500 hover:bg-white transition-all duration-300 group shadow-lg"
@@ -122,7 +123,7 @@ const Footer = () => {
           </div>
 
           <p className="text-[13px] text-black/65 dark:text-white/65">
-            Built with <span className="text-[#dc1c1c]">♥</span> & Next.js
+            Built with <span className="text-[#dc1c1c]">♥</span> 
           </p>
         </div>
       </div>

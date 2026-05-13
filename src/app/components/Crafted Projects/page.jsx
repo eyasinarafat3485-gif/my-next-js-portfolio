@@ -1,49 +1,10 @@
-"use client"; // Framer Motion use korle eiti add kora dorkar
+"use client";
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion'; // 1. Framer motion import kora holo
+import { motion } from 'framer-motion';
+import projects from '@/craftedprojects-data.json'
 
 const CraftedProjects = () => {
-    const projects = [
-        {
-            id: "01",
-            title: "Product Landing + Conversion System",
-            description: "Designed and delivered a conversion-focused landing experience with fast load times, SEO-ready structure, and crisp mobile layout. The build includes reusable UI blocks, analytics events, and clean handoff for marketing teams.",
-            tags: ["Next.js", "SEO", "UI/UX", "Analytics"],
-            image: "/project1.jpeg",
-            bg: "bg-orange-500"
-        },
-        {
-            id: "02",
-            title: "Multi-step Client Onboarding",
-            description: "Built a guided onboarding flow with validation, progress tracking, and a minimal admin view. The experience reduces drop-off and improves activation with smart defaults and clear microcopy.",
-            tags: ["React", "Forms", "Automation", "Dashboard"],
-            image: "/project2.jpg",
-        },
-        {
-            id: "03",
-            title: "Commerce Catalog + Search",
-            description: "Developed a fast product catalog with category filters, smart search, and optimized image delivery. The layout keeps products discoverable on mobile and scales smoothly with large data sets.",
-            tags: ["React", "Performance", "Filters", "Responsive"],
-            image: "/project3.jpeg",
-            bg: "bg-cyan-500"
-        },
-        {
-            id: "04",
-            title: "Service Booking Workflow",
-            description: "Crafted a scheduling experience with availability logic, instant confirmations, and webhook automation. Includes admin controls for managing slots and rescheduling requests.",
-            tags: ["Scheduling", "Webhooks", "Integrations", "UX"],
-            image: "/project4.jpg",
-        },
-        {
-            id: "05",
-            title: "Ops Dashboard + Alerts",
-            description: "Designed a compact operations dashboard with real-time metrics and alerting. Optimized for at-a-glance decisions with clear visual hierarchy and scalable component patterns",
-            tags: ["Dashboard", "Realtime", "Monitoring", "Design System"],
-            image: "/project5.jpeg",
-        }
-    ];
-
     return (
         <section className="p-6 bg-gradient-to-br bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 w-[92%] mx-auto my-10 rounded-3xl">
             <motion.div
@@ -63,16 +24,15 @@ const CraftedProjects = () => {
             </motion.div>
 
             {/* Projects List */}
-            <div className="space-y-8 md:space-y-15">
+            <div className="space-y-7 md:space-y-10">
                 {projects.map((project, index) => (
                     <motion.div
                         key={project.id}
-                        initial={{ opacity: 0, y: 80 }}
+                        initial={{ opacity: 0, y: 70 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.1 }}
-                        className={`flex md:flex-row flex-col items-center md:gap-8 gap-2 w-full ${index % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
-                    >
+                        className={`flex md:flex-row flex-col items-center md:gap-8 gap-2 w-full ${index % 2 !== 0 ? "md:flex-row-reverse" : ""}`} >
 
                         {/* Text Side (Card) */}
                         <div className="flex-1 p-4 md:p-2.5 md:pt-5 md:pb-5 bg-white border border-gray-100 dark:bg-black/65 rounded-2xl shadow-sm ">

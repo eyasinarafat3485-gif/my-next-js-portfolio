@@ -2,7 +2,6 @@
 import React from 'react';
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import myImg from '../../../assets/Eyasin portfolio.png'
-import { Download, ArrowRight } from 'lucide-react';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import Image from 'next/image';
 import SkillsCarousel from './Skills';
@@ -44,15 +43,9 @@ const Banner = () => {
                     </div>
                     <div className="text-xl md:text-2xl text-gray-500 text-center md:text-start font-medium">
                         <span className="mr-1">I am a</span>
-                        <TypeAnimation
-                            sequence={[
-                                'Full Stack Developer',
-                                2000,
-                                'MERN Stack Expert',
-                                2000,
-                                'WordPress Developer',
-                                2000,
-                            ]}
+                        <TypeAnimation sequence={['Full Stack Developer', 2000, 'MERN Stack Expert', 2000, 'WordPress Developer', 2000,
+                        ]}
+
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}

@@ -1,5 +1,6 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
 import React from 'react';
+import InfoCard from '../components/InfoCard';
+import FormSection from '../components/FromSection';
 
 const LetsWork = () => {
   return (
@@ -19,108 +20,11 @@ const LetsWork = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
           {/* Left Side: Contact Form */}
-          <div className="lg:col-span-2 bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 p-8">
-            <div className="flex items-center gap-3 mb-8">
-              <Mail className="text-red-500 w-6 h-6" />
-              <h2 className="text-xl font-bold text-gray-800 dark:text-red-500">Send a Message</h2>
-            </div>
-
-            <form className="space-y-5 text-sm">
-              <div>
-                <label className="block text-gray-700 dark:text-orange-500 font-bold mb-2">Your Name *</label>
-                <input
-                  type="name"
-                  placeholder="John Doe"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-white focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 dark:bg-slate-500/70 mb-3" />
-              </div>
-
-
-              <label className="block text-gray-700 dark:text-orange-500 font-bold mb-2">Email Address *</label>
-              <div>
-                <input type="email" name='email' placeholder="john@example.com"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 mb-3 dark:bg-slate-500/70" required />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 dark:text-orange-500 font-bold mb-2">Subject *</label>
-                <input
-                  type="text"
-                  placeholder="Project Discussion"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 mb-3 dark:bg-slate-500/70"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-700 dark:text-orange-500 font-bold mb-2">Your Message *</label>
-                <textarea
-                  rows="4"
-                  placeholder="Tell me about your project..."
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 resize-none mb-3 dark:bg-slate-500/70"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-red-500 hover:bg-red-600 text-white text-xl font-bold py-3.5 rounded-full transition-colors duration-300 shadow-md cursor-pointer"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
+          <FormSection />
 
           {/* Right Side: Info Cards */}
-          <div className="flex flex-col gap-6">
+          <InfoCard />
 
-            {/* Phone Card */}
-            <div className="bg-white dark:bg-black p-8 rounded-2xl shadow-sm border-[1.5px] border-gray-100 hover:border-red-500 transition-colors duration-500 flex flex-col items-center text-center">
-              <div className="bg-red-50 dark:bg-slate-500/70 p-3 rounded-full mb-4">
-                <Phone className="text-red-500 w-6 h-6" />
-              </div>
-              <h3 className="font-bold text-gray-800 dark:text-orange-500 mb-2">Phone</h3>
-              <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
-                +880 1304 513475 <br />
-                +880 1960 421858 <br />
-              </p>
-              
-              <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
-                <span className="w-[8px] h-[8px] rounded-full bg-blue-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
-                <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'> Available 9am - 10pm </p>
-              </div>
-            </div>
-
-            {/* Email Card */}
-            <div className="bg-white dark:bg-black p-8 rounded-2xl shadow-sm border-[1.5px] border-gray-100 hover:border-red-500 transition-colors duration-500 flex flex-col items-center text-center">
-              <div className="bg-red-50 dark:bg-slate-500/70 p-3 rounded-full mb-4">
-                <Mail className="text-red-500 w-6 h-6" />
-              </div>
-              <h3 className="font-bold text-gray-800 dark:text-orange-500 mb-2">Email</h3>
-              <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
-                eyasinwebdev@gmail.com <br />
-              </p>
-
-              <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
-                <span className="w-[8px] h-[8px] rounded-full bg-orange-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
-                <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'> Reply within 24 hours </p>
-              </div>
-            </div>
-
-            {/* Location Card */}
-            <div className="bg-white dark:bg-black p-8 rounded-2xl shadow-sm border-[1.5px] border-gray-100 hover:border-red-500 transition-colors duration-500 flex flex-col items-center text-center">
-              <div className="bg-red-50 dark:bg-slate-500/70 p-3 rounded-full mb-4">
-                <MapPin className="text-red-500 w-6 h-6" />
-              </div>
-              <h3 className="font-bold text-gray-800 dark:text-orange-500 mb-2">Location</h3>
-              <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
-                Mymenshing, Bangladesh <br />
-              </p>
-
-              <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
-                <span className="w-[8px] h-[8px] rounded-full bg-green-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
-                <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'>Available for work</p>
-              </div>
-            </div>
-
-          </div>
         </div>
       </div>
     </div>

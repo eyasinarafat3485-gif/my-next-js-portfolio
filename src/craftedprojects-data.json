@@ -1,0 +1,64 @@
+[
+    {
+        "id": "01",
+        "title": "Product Landing + Conversion System",
+        "description": "Designed and delivered a conversion-focused landing experience with fast load times, SEO-ready structure, and crisp mobile layout. The build includes reusable UI blocks, analytics events, and clean handoff for marketing teams.",
+        "tags": [
+            "Next.js",
+            "SEO",
+            "UI/UX",
+            "Analytics"
+        ],
+        "image": "/project1.jpeg",
+        "bg": "bg-orange-500"
+    },
+    {
+        "id": "02",
+        "title": "Multi-step Client Onboarding",
+        "description": "Built a guided onboarding flow with validation, progress tracking, and a minimal admin view. The experience reduces drop-off and improves activation with smart defaults and clear microcopy.",
+        "tags": [
+            "React",
+            "Forms",
+            "Automation",
+            "Dashboard"
+        ],
+        "image": "/project2.jpg"
+    },
+    {
+        "id": "03",
+        "title": "Commerce Catalog + Search",
+        "description": "Developed a fast product catalog with category filters, smart search, and optimized image delivery. The layout keeps products discoverable on mobile and scales smoothly with large data sets.",
+        "tags": [
+            "React",
+            "Performance",
+            "Filters",
+            "Responsive"
+        ],
+        "image": "/project3.jpeg",
+        "bg": "bg-cyan-500"
+    },
+    {
+        "id": "04",
+        "title": "Service Booking Workflow",
+        "description": "Crafted a scheduling experience with availability logic, instant confirmations, and webhook automation. Includes admin controls for managing slots and rescheduling requests.",
+        "tags": [
+            "Scheduling",
+            "Webhooks",
+            "Integrations",
+            "UX"
+        ],
+        "image": "/project4.jpg"
+    },
+    {
+        "id": "05",
+        "title": "Ops Dashboard + Alerts",
+        "description": "Designed a compact operations dashboard with real-time metrics and alerting. Optimized for at-a-glance decisions with clear visual hierarchy and scalable component patterns",
+        "tags": [
+            "Dashboard",
+            "Realtime",
+            "Monitoring",
+            "Design System"
+        ],
+        "image": "/project5.jpeg"
+    }
+]

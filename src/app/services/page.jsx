@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Servicesdata from '../../services-data.json';
+import Servicesdata from '@/services-data.json';
 import Image from 'next/image';
 
 const Service = () => {
@@ -33,7 +33,7 @@ const Service = () => {
                 className={`w-12 h-12 absolute -top-6 left-1/4 -translate-x-1/2 rounded-full flex items-center justify-center transition-all duration-300 
                   ${hoveredIndex === index ? "bg-white ring-2 ml-21 ring-red-500" : "bg-red-500"}`}
               >
-                {/* Fixed width and height here */}
+                {/* Fixed width and height */}
                 <Image 
                   width={30} 
                   height={30}

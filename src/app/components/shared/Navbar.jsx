@@ -1,8 +1,8 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { BiMenu, BiX, BiHomeAlt, BiUser, BiCodeBlock, BiBriefcase, BiPhone } from 'react-icons/bi';
+import { BiX, BiHomeAlt, BiUser, BiCodeBlock, BiBriefcase, BiPhone } from 'react-icons/bi';
 import ThemeToggle from '../ThemeToggle';
 import { RiMenu3Fill } from 'react-icons/ri';
 
@@ -20,19 +20,42 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  // ADD THIS
+  const menuRef = useRef(null);
+
   useEffect(() => {
     setActivePath(pathname);
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+
+    // ADD THIS
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    // ADD THIS
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+
+      // ADD THIS
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, [pathname]);
 
   return (
     <nav className={` text-black  dark:text-white transition-all duration-200 sticky left-0 w-full h-20 z-[100] flex items-center transition-all ease-in-out ${scrolled ? '' : 'bg-transparent'
       }`}>
-      <div className='relative z-10 flex justify-between items-center w-full max-w-7xl mx-auto px-4 md:px-12'>
+
+      {/* ADD ref HERE */}
+      <div ref={menuRef} className='relative z-10 flex justify-between items-center w-full max-w-7xl mx-auto px-4 md:px-12'>
 
         {/* Logo Section */}
         <div className='flex items-center gap-3'>
@@ -42,6 +65,7 @@ const Navbar = () => {
             className="flex items-center justify-center shadow-lg shadow-red-500/30 transition-all duration-200 hover:scale-105 shrink-0">
             <img src="/Ea-logo.png" alt="EA Logo" className="w-7 h-7 object-contain" />
           </Link>
+
           <Link href="/" onClick={() => setActivePath("/")} className='text-xl font-bold tracking-tight uppercase truncate text-gray-800 dark:text-white transition-colors duration-200'>
             Eyasin Arafat
           </Link>
@@ -101,4 +125,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -92,7 +92,7 @@ const Experience = () => {
           <div className="flex justify-between items-start mb-6">
             <div>
               <h2 className="text-[27px] font-bold text-slate-800 dark:text-orange-500">
-                Wordpress Developer (Internship)
+                Wordpress Developer
               </h2>
 
               <p className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold">

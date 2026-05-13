@@ -112,25 +112,20 @@ function SkillCard({ skill, onHover, isDragging }) {
             onMouseLeave={() => { setHovered(false); onHover(false); }}
             className="relative p-[2px] rounded-2xl dark:hover:bg-black transition-all duration-500 min-w-[120px] md:min-w-[180px]"
             style={{
-                background: hovered && !isDragging
-                    ? `conic-gradient(#ff0000 ${count}%, #e2e8f0 ${count}%)`
+                background: hovered && !isDragging ? `conic-gradient(#ff0000 ${count}%, #e2e8f0 ${count}%)`
                     : "#e2e8f0"
-            }}
-        >
+            }} >
+
             <div className="flex flex-col items-center justify-center h-[90px] md:h-[150px] w-full rounded-[14px] transition-all relative overflow-hidden md:border bg-white dark:bg-white/10 border-gray-50 dark:hover:bg-black md:border-none shadow-sm md:shadow-none">
 
                 {/* Percentage Count */}
-                {hovered && !isDragging && (
-                    <span className="absolute top-1 right-2 text-[10px] md:text-xl font-black text-red-600 dark:text-white animate-pulse dark:hover:bg-black">
-                        {count}%
-                    </span>
+                {hovered && !isDragging && (<span className="absolute top-1 right-2 text-[10px] md:text-xl font-black text-red-600 dark:text-white animate-pulse dark:hover:bg-black">
+                    {count}%
+                </span>
                 )}
 
                 {/* Icon Container */}
-                <div
-                    className={`p-1.5 md:p-3 rounded-lg md:rounded-xl mb-1 md:mb-3 transition-all duration-500 ${hovered && !isDragging ? 'bg-red-50 scale-105 md:scale-110 text-red-600' : 'text-slate-600'
-                        }`}
-                >
+                <div className={`p-1.5 md:p-3 rounded-lg md:rounded-xl mb-1 md:mb-3 transition-all duration-500 ${hovered && !isDragging ? 'bg-red-50 scale-105 md:scale-110 text-red-600' : 'text-slate-600'}`}>
                     {/* Icon */}
                     <div className="text-lg md:text-3xl">
                         {skill.icon}
@@ -138,8 +133,7 @@ function SkillCard({ skill, onHover, isDragging }) {
                 </div>
 
                 {/* Skill Name */}
-                <span className={`text-[9px] md:text-[12px] font-bold uppercase tracking-wider transition-colors duration-300 ${hovered && !isDragging ? 'text-red-600 dark:text-white' : 'text-slate-500'
-                    }`}>
+                <span className={`text-[9px] md:text-[12px] font-bold uppercase tracking-wider transition-colors duration-300 ${hovered && !isDragging ? 'text-red-600 dark:text-white' : 'text-slate-500'}`}>
                     {skill.name}
                 </span>
             </div>
