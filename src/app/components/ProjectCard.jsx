@@ -11,7 +11,7 @@ function ProjectCard({ project }) {
       className="relative p-[2px] rounded-[2rem] transition-all duration-50 h-[300px] w-[320px] md:w-[340px] shrink-0">
         
       {/* Inner Content */}
-      <div className="relative h-full w-full overflow-hidden rounded-[1.85rem] bg-white shadow-lg p-2">
+      <div className="relative h-full w-full overflow-hidden rounded-[1.85rem] bg-white dark:bg-slate-500/70  shadow-lg p-2">
         <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] bg-gray-200">
 
           <img

@@ -24,7 +24,7 @@ const Service = () => {
           {Servicesdata.map((service, index) => (
             <div
               key={index}
-              className="relative bg-white rounded-2xl shadow-sm px-6 pt-10 pb-5 max-w-sm text-center cursor-grab transition-all duration-300 border-[1.5px] border-gray-100 hover:border-red-500"
+              className="relative bg-white dark:bg-black rounded-2xl shadow-sm px-6 pt-10 pb-5 max-w-sm text-center cursor-grab transition-all duration-300 border-[1.5px] border-gray-100 hover:border-red-500"
               onMouseEnter={() => setHoveredIndex(index)} 
               onMouseLeave={() => setHoveredIndex(null)}  
             >
@@ -46,12 +46,12 @@ const Service = () => {
               </div>
 
               {/* Card Title */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3 mt-6">
+              <h3 className="text-xl font-bold  text-slate-800 dark:text-white/75 mb-3 mt-6">
                 {service.title}
               </h3>
 
               {/* Card Description */}
-              <p className="text-base text-gray-600 pt-2">
+              <p className="text-base text-gray-500 pt-2">
                 {service.description}
               </p>
             </div>

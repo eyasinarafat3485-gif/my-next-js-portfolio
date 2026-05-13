@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import work from '../../assets/tech.png'
+import lightWork from '../../assets/tech.png'
+import darkWork from '../../assets/darkmode.png'
+
 import Image from 'next/image';
 
 const AboutMe = () => {
@@ -32,22 +34,30 @@ const AboutMe = () => {
     ];
 
     return (
-        <section id='about' className="w-[92%] mb-10 mt-10 mx-auto shadow-lg rounded-3xl bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 transition-colors duration-500">
+        <section id='about' className="w-[92%] mb-10 mx-auto shadow-lg rounded-3xl bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 transition-colors duration-500">
             <div className="w-full mx-auto flex flex-col lg:flex-row gap-12 items-start">
                 {/* Left (Image & Timeline) */}
                 <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start ">
                     {/* Illustration Image */}
-                    <div className="w-full ">
-                        <Image src={work} alt="Developer Illustration" className="w-full bg-slate-50 border-t-0  rounded-tl-3xl rounded-tr-3xl md:rounded-tr-sm md:rounded-tl-3xl h-65" />
+                    <div className="w-full">
+
+                        {/* Light Mode Image */}
+                        <Image
+                            src={lightWork}
+                            alt="Developer Illustration"
+                            className=" w-full h-65 object-cover block dark:hidden rounded-tl-3xl rounded-tr-3xl md:rounded-tr-sm md:rounded-tl-3xl"/>
+
+                        {/* Dark Mode Image */}
+                        <Image src={darkWork} alt="Developer Illustration Dark" className=" w-full h-65 object-cover hidden dark:block rounded-tl-3xl rounded-tr-3xl md:rounded-tr-sm md:rounded-tl-3xl"/>
                     </div>
 
                     {/* Timeline Info */}
-                    <div className='flex flex-col md:pl-8 pt-3'>
+                    <div className='flex flex-col md:pl-8 pt-5 dark:pt-8'>
                         <div className="relative border-l-2 border-red-500 ">
                             {infoData.map((item, index) => (
                                 <div key={index} className="mb-3 ml-6 relative">
                                     {/* Red Dot */}
-                                    <div className="absolute h-3.5 w-3.5 mt-1.5 -left-8 bg-red-500 rounded-full border-2 border-white "></div>
+                                    <div className="absolute h-3.5 w-3.5 mt-1.5 -left-8 bg-red-500 rounded-full border-2 border-white dark:border-white/80"></div>
 
                                     <p className="text-gray-800">
                                         <span className="font-semibold text-lg  dark:text-orange-500 light:text-black">{item.label}: </span> <span className='text-[16px]  dark:text-white light:text-black'>{item.value}</span>
@@ -84,12 +94,12 @@ const AboutMe = () => {
                 {/* Right (Content) */}
                 <div className="w-full lg:w-2/3 md:pr-10 ">
                     <div className="w-fit">
-                        <h2 className="text-3xl font-extrabold text-[#0F172A] text-center md:text-left p-5 md:pl-4  dark:text-white light:text-black">About Me— <span className="text-gray-700 decoration-red-500  dark:text-orange-500 ">Full Stack Web Developer</span></h2>
+                        <h2 className="text-3xl font-extrabold text-[#0F172A] text-center md:text-left p-5 md:pl-4  dark:text-white/75 light:text-black">About Me— <span className="text-gray-700 decoration-red-500  dark:text-orange-500 ">Full Stack Web Developer</span></h2>
                         <div className="h-0.5 mb-4 md:mb-8 bg-red-500 w-[92%] mx-auto "></div>
                     </div>
 
-                    <div className="text-gray-600 leading-relaxed space-y-3 md:space-y-6 text-lg text-justify p-5">
-                        <p className='text-[16px] leading-relaxed  dark:text-white light:text-black'>
+                    <div className="text-gray-500 leading-relaxed space-y-3 md:space-y-6 text-lg text-justify p-5">
+                        <p className='text-[16px] leading-relaxed  dark:text-white/65 light:text-black'>
                             {introductoryText}
 
                             <span className={`${isExpanded ? 'inline' : 'hidden'} md:inline`}>
@@ -108,7 +118,7 @@ const AboutMe = () => {
                             className="mt-2 bg-[#FF5A5F] text-white px-5 py-1 rounded-full font-semibold md:hidden">
                             {isExpanded ? "See less" : "See more"}
                         </button>
-                        <p className='text-[16px] dark:text-white light:text-black'>
+                        <p className='text-[16px] dark:text-white/65 light:text-black'>
                             I focus on clean architecture, smooth performance, and a polished user experience. Every line of code I write is aimed at solving real-world problems with reliability, security, and speed.
                         </p>
                     </div>

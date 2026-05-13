@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className={`bg-white text-black dark:bg-black dark:text-white transition-all duration-300 sticky left-0 w-full h-20 z-[100] flex items-center transition-all duration-500 ease-in-out ${scrolled ? '' : 'bg-transparent'
+    <nav className={` text-black  dark:text-white transition-all duration-200 sticky left-0 w-full h-20 z-[100] flex items-center transition-all ease-in-out ${scrolled ? '' : 'bg-transparent'
       }`}>
       <div className='relative z-10 flex justify-between items-center w-full max-w-7xl mx-auto px-4 md:px-12'>
 
@@ -39,10 +39,10 @@ const Navbar = () => {
           <Link
             href="/"
             onClick={() => setActivePath("/")}
-            className="flex items-center justify-center shadow-lg shadow-red-500/30 transition-all duration-300 hover:scale-105 shrink-0">
+            className="flex items-center justify-center shadow-lg shadow-red-500/30 transition-all duration-200 hover:scale-105 shrink-0">
             <img src="/Ea-logo.png" alt="EA Logo" className="w-7 h-7 object-contain" />
           </Link>
-          <Link href="/" onClick={() => setActivePath("/")} className='text-xl font-bold tracking-tight uppercase truncate text-gray-800 dark:text-white transition-colors duration-300'>
+          <Link href="/" onClick={() => setActivePath("/")} className='text-xl font-bold tracking-tight uppercase truncate text-gray-800 dark:text-white transition-colors duration-200'>
             Eyasin Arafat
           </Link>
         </div>
@@ -58,9 +58,6 @@ const Navbar = () => {
                   ? 'text-red-500 font-bold'
                   : 'text-gray-800 dark:text-white'
                   }`}
-              // className={`flex items-center gap-2 transition-colors text-lg ${activePath === link.path ? 'text-red-500 font-bold' : 'text-gray-700'
-              //   }`}
-
               >
                 <span className='hidden lg:block text-xl'>{link.icon}</span>
                 <span>{link.name}</span>
@@ -80,7 +77,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         <ul className={`
-          md:hidden absolute right-3 w-35 bg-white/95 backdrop-blur-xl border border-red-50 flex flex-col gap-1 shadow-2xl rounded-md transition-all duration-300 ease-in-out
+          md:hidden absolute right-3 w-35 bg-white/95 dark:bg-black backdrop-blur-xl border border-red-50 flex flex-col gap-1 shadow-2xl rounded-md transition-all duration-200 ease-in-out
           ${open ? 'top-[50px] opacity-100 visible' : 'top-[50px] opacity-0 invisible'}
         `}>
           {navLinks.map((link) => (
@@ -88,7 +85,7 @@ const Navbar = () => {
               <Link
                 href={link.path}
                 className={`flex items-center gap-2 text-base font-medium p-1 rounded-sm transition-colors
-                ${activePath === link.path ? 'text-red-500 bg-red-50 font-bold' : 'text-gray-400 hover:bg-red-50 hover:text-red-500'}`}
+                ${activePath === link.path ? 'text-red-500 bg-red-50 dark:bg-black font-bold' : 'text-gray-400 hover:bg-red-50 hover:text-red-500'}`}
               >
                 <span className='text-xl'>{link.icon}</span>
                 {link.name}

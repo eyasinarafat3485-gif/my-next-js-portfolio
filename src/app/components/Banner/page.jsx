@@ -98,9 +98,9 @@ const Banner = () => {
 
                 {/* Banner Right */}
                 <div className='bannerRight mt-10 order-3 md:w-[40%] text-center md:text-start md:mt-60'>
-                    <p className='text-[18px] md:text-[22px] '>Crafting exceptional web experiences with</p>
+                    <p className='text-[18px] md:text-[22px] dark:text-white/65'>Crafting exceptional web experiences with</p>
                     <p className='text-[20px] md:text-[24px] font-semibold  text-red-500'>Node.js, React.js, Next.js, Express.js</p>
-                    <p className='text-[18px] md:text-[22px] '>and modern technologies.Transforming ideas into scalable digital solutions.</p>
+                    <p className='text-[18px] md:text-[22px] dark:text-white/65'>and modern technologies.Transforming ideas into scalable digital solutions.</p>
 
                     <div className='mt-8 space-x-5 flex'>
                         <Link href='/#projects' ><ViewWorkButton /> </Link>
