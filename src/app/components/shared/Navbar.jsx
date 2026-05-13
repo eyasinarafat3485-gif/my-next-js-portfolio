@@ -84,7 +84,7 @@ const Navbar = () => {
             <li key={link.id} onClick={() => { setOpen(false); setActivePath(link.path); }}>
               <Link
                 href={link.path}
-                className={`flex items-center gap-2 text-base font-medium p-1 rounded-sm transition-colors
+                className={`flex items-center gap-2 text-base font-medium p-1 rounded-md transition-colors
                 ${activePath === link.path ? 'text-red-500 bg-red-50 dark:bg-black font-bold' : 'text-gray-400 hover:bg-red-50 hover:text-red-500'}`}
               >
                 <span className='text-xl'>{link.icon}</span>

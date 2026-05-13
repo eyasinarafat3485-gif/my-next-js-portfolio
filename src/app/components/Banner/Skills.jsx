@@ -75,7 +75,7 @@ export default function SkillsCarousel() {
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUpOrLeave}
                 onMouseLeave={handleMouseUpOrLeave}
-                className={`flex gap-8 overflow-x-hidden whitespace-nowrap px-10 pt-2 ${isDragging ? "cursor-auto" : "cursor-grab"
+                className={`flex gap-8 overflow-x-hidden whitespace-nowrap px-10 md:pt-2 pt-5 ${isDragging ? "cursor-auto" : "cursor-grab"
                     }`}
             >
                 {[...Skills, ...Skills, ...Skills].map((skill, i) => (
@@ -117,7 +117,7 @@ function SkillCard({ skill, onHover, isDragging }) {
                     : "#e2e8f0"
             }}
         >
-            <div className="flex flex-col items-center justify-center h-[90px] md:h-[150px] w-full rounded-[14px] transition-all relative overflow-hidden border bg-white dark:bg-white/10 border-gray-50 dark:hover:bg-black md:border-none shadow-sm md:shadow-none">
+            <div className="flex flex-col items-center justify-center h-[90px] md:h-[150px] w-full rounded-[14px] transition-all relative overflow-hidden md:border bg-white dark:bg-white/10 border-gray-50 dark:hover:bg-black md:border-none shadow-sm md:shadow-none">
 
                 {/* Percentage Count */}
                 {hovered && !isDragging && (

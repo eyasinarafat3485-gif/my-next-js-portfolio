@@ -34,7 +34,7 @@ const AboutMe = () => {
     ];
 
     return (
-        <section id='about' className="w-[92%] mb-10 mx-auto shadow-lg rounded-3xl bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 transition-colors duration-500">
+        <section id='about' className="w-[92%] mt-10 md:mt-0 mx-auto shadow-lg rounded-3xl bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 transition-colors duration-500">
             <div className="w-full mx-auto flex flex-col lg:flex-row gap-12 items-start">
                 {/* Left (Image & Timeline) */}
                 <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start ">
