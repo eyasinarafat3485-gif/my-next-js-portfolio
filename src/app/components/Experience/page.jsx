@@ -3,6 +3,13 @@
 import { motion } from "framer-motion";
 
 const Experience = () => {
+  const fadeInUp = {
+    initial: { opacity: 0, y: 50 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: "easeOut" },
+    viewport: { once: true }
+  };
+
   return (
     <div className="p-6 bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 w-[92%] mx-auto my-10 rounded-3xl">
 
@@ -22,10 +29,7 @@ const Experience = () => {
 
         {/* 1 */}
         <motion.div
-          initial={{ opacity: 0, x: 120 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          {...fadeInUp}
           className="bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 p-4 md:p-8 hover:shadow-md transition-all duration-300"
         >
           <div className="flex justify-between items-start mb-6">
@@ -53,10 +57,7 @@ const Experience = () => {
 
         {/* 2 */}
         <motion.div
-          initial={{ opacity: 0, x: -120 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          {...fadeInUp}
           className="bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 p-4 md:p-8 hover:shadow-md transition-all duration-300"
         >
           <div className="flex justify-between items-start mb-6">
@@ -83,10 +84,7 @@ const Experience = () => {
 
         {/* 3 */}
         <motion.div
-          initial={{ opacity: 0, x: 120 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          {...fadeInUp}
           className="bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 p-4 md:p-8 hover:shadow-md transition-all duration-300"
         >
           <div className="flex justify-between items-start mb-6">
