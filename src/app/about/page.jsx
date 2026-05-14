@@ -7,12 +7,12 @@ import Image from 'next/image';
 
 const AboutMe = () => {
     const handleDownloadCv = () => {
-        const cvUrl = "/Full Stack Dev .pdf";
+        const cvUrl = "/EA-CV.pdf";
 
         const link = document.createElement("a");
         link.href = cvUrl;
 
-        link.setAttribute("download", "Eyasin_Arafat_CV.pdf");
+        link.setAttribute("download", "EA-CV.pdf");
 
         document.body.appendChild(link);
         link.click();
