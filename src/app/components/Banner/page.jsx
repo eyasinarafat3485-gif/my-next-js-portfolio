@@ -23,7 +23,7 @@ const Banner = () => {
                     </div>
 
                     <div className='text-center md:text-left md:w-full md:items-start mx-auto md:mx-0 '>
-                        <h3 className="text-lg md:text-xl text-gray-400 mb-2">
+                        <h3 className="text-lg md:text-xl text-gray-600 mb-2">
                             Hey, I'm <motion.span
                                 animate={{ rotate: [0, 20, 0, 20, 0] }}
                                 transition={{
@@ -45,7 +45,6 @@ const Banner = () => {
                         <span className="mr-1">I am a</span>
                         <TypeAnimation sequence={['Full Stack Developer', 2000, 'MERN Stack Expert', 2000, 'WordPress Developer', 2000,
                         ]}
-
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}

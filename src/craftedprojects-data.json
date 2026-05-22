@@ -4,10 +4,10 @@
         "title": "Product Landing + Conversion System",
         "description": "Designed and delivered a conversion-focused landing experience with fast load times, SEO-ready structure, and crisp mobile layout. The build includes reusable UI blocks, analytics events, and clean handoff for marketing teams.",
         "tags": [
-            "Next.js",
-            "SEO",
-            "UI/UX",
-            "Analytics"
+            "Wordpress",
+            "Forms",
+            "Elementor",
+            "Dashboard"
         ],
         "image": "/project1.jpeg",
         "bg": "bg-orange-500"
@@ -17,10 +17,10 @@
         "title": "Multi-step Client Onboarding",
         "description": "Built a guided onboarding flow with validation, progress tracking, and a minimal admin view. The experience reduces drop-off and improves activation with smart defaults and clear microcopy.",
         "tags": [
-            "React",
-            "Forms",
-            "Automation",
-            "Dashboard"
+            "Next.js",
+            "SEO",
+            "UI/UX",
+            "Analytics"
         ],
         "image": "/project2.jpg"
     },
