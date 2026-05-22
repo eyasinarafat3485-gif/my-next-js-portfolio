@@ -14,12 +14,8 @@ function ProjectCard({ project }) {
       <div className="relative h-full w-full overflow-hidden rounded-[1.85rem] bg-white dark:bg-slate-500/70  shadow-lg p-2">
         <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] bg-gray-200">
 
-          <img
-            src={project.image}
-            alt={project.title}
-            className={`h-full w-full object-cover transition-transform duration-50 ease-out ${hovered ? "scale-105" : ""}`}
-          />
-
+          <img src={project.image} alt={project.title} className={`h-full w-full object-cover transition-transform duration-50 ease-out ${hovered ? "scale-105" : ""}`} />
+ 
           {/* Overlay */}
           <div className={`absolute inset-0 flex flex-col justify-end bg-black/65 p-8 text-white transition-all duration-200 ease-out ${hovered ? "opacity-100" : "opacity-0"}`}>
 

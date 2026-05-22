@@ -47,7 +47,7 @@ const Footer = () => {
               Navigation
             </h3>
             <ul className="flex flex-col gap-3 ">
-              {['Home', 'About', 'Projects', 'Contact'].map((item) => (
+              {['Home', 'About', 'Projects', 'Services', 'Contact'].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase()}`}
