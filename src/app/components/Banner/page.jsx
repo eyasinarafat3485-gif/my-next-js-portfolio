@@ -23,7 +23,7 @@ const Banner = () => {
                     </div>
 
                     <div className='text-center md:text-left md:w-full md:items-start mx-auto md:mx-0 '>
-                        <h3 className="text-lg md:text-xl text-gray-600 mb-2">
+                        <h3 className="text-lg md:text-xl text-gray-500 mb-2">
                             Hey, I'm <motion.span
                                 animate={{ rotate: [0, 20, 0, 20, 0] }}
                                 transition={{
