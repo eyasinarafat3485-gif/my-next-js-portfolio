@@ -51,7 +51,7 @@ const Service = () => {
               </h3>
 
               {/* Card Description */}
-              <p className="text-base text-gray-500 pt-2">
+              <p className="text-base text-gray-600 dark:text-gray-500 pt-2">
                 {service.description}
               </p>
             </div>

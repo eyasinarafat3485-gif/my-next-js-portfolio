@@ -94,7 +94,7 @@ const AboutMe = () => {
                 {/* Right (Content) */}
                 <div className="w-full lg:w-2/3 md:pr-10 ">
                     <div className="w-fit">
-                        <h2 className="text-3xl font-extrabold text-[#0F172A] text-center md:text-left p-5 md:pl-4  dark:text-white/75 light:text-black">About Me— <span className="text-gray-700 decoration-red-500  dark:text-orange-500 ">Full Stack Web Developer</span></h2>
+                        <h2 className="text-3xl font-extrabold text-[#0F172A] text-center md:text-left p-5 md:pl-4  dark:text-white/75 light:text-black">About Me— <span className="text-gray-700 decoration-red-500  dark:text-red-500 ">Full Stack Web Developer</span></h2>
                         <div className="h-0.5 mb-4 md:mb-8 bg-red-500 w-[92%] mx-auto "></div>
                     </div>
 

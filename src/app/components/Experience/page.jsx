@@ -44,7 +44,7 @@ const Experience = () => {
             </div>
 
             <div className="text-right">
-              <p className="text-pink-600 font-semibold">Now</p>
+              <p className="text-red-500 font-semibold">Now</p>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ const Experience = () => {
             </div>
 
             <div className="text-right">
-              <p className="text-pink-600 font-semibold">Q4 - 2026</p>
+              <p className="text-red-500 font-semibold">Q4 - 2026</p>
             </div>
           </div>
 
@@ -99,7 +99,7 @@ const Experience = () => {
             </div>
 
             <div className="text-right">
-              <p className="text-pink-600 font-semibold">
+              <p className="text-red-500 font-semibold">
                 Q3 - Q4 2025
               </p>
             </div>
