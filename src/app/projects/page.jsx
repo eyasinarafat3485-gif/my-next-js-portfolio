@@ -15,7 +15,7 @@ const RecentProjects = () => {
         {/* Header Section */}
         <div className="flex justify-between items-end mb-12">
           <div>
-            <span className="text-red-500 dark:text-orange-500 font-bold uppercase tracking-widest text-sm">Portfolio</span>
+            <span className="text-black dark:text-orange-500 font-bold uppercase tracking-widest text-sm">Portfolio</span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">
               Recent <span className="text-red-500">Projects</span>
             </h2>
