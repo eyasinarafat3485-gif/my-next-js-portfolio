@@ -8,7 +8,7 @@ const LetsWork = () => {
       <div className="max-auto max-w-6xl ">
         {/* Header Section */}
         <div className="mb-10">
-          <p className="text-orange-500 dark:text-orange-500 font-semibold uppercase tracking-wide text-sm">Get In Touch</p>
+          <p className="text-black dark:text-orange-500 font-semibold uppercase tracking-wide text-sm">Get In Touch</p>
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white light:text-black mt-2 ">
             Let,s Work <span className="text-red-500">Together</span>
           </h1>
