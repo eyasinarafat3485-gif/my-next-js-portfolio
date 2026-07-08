@@ -69,3 +69,4 @@ const CraftedProjects = () => {
 };
 
 export default CraftedProjects;
+
