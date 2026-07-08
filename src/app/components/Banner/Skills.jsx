@@ -116,7 +116,6 @@ function SkillCard({ skill, onHover, isDragging }) {
                     : "#e2e8f0"
             }} >
 
-            {/* এখানে ডার্ক মোডের গ্র্যাডিয়েন্ট নরমাল ব্যাকগ্রাউন্ড এবং হোভারে ব্যাকগ্রাউন্ড হোয়াইট করার কন্ডিশন সেট করা হয়েছে */}
             <div className={`flex flex-col items-center justify-center h-[90px] md:h-[150px] w-full rounded-[14px] transition-colors duration-500 relative overflow-hidden md:border bg-white border-gray-50 md:border-none shadow-sm md:shadow-none dark:bg-gradient-to-br dark:bg-slate-900 dark:hover:from-white dark:hover:via-white dark:hover:bg-white`}>
 
                 {/* Percentage Count */}
@@ -135,7 +134,7 @@ function SkillCard({ skill, onHover, isDragging }) {
                 </div>
 
                 {/* Skill Name */}
-                <span className={`text-[9px] md:text-[12px] font-bold uppercase tracking-wider transition-colors duration-300 ${hovered && !isDragging ? 'text-red-600 dark:text-slate-900' : 'text-slate-500 dark:text-red-500'}`}>
+                <span className={`text-[9px] md:text-[12px] font-bold uppercase tracking-wider transition-colors duration-300 ${hovered && !isDragging ? 'text-red-600 dark:text-red-600' : 'text-red-500 dark:text-red-500'}`}>
                     {skill.name}
                 </span>
             </div>
