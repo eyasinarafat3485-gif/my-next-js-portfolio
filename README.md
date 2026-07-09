@@ -1,3 +1,4 @@
+
 <h1 align="center">🌐 Md. Eyasin Arafat — Portfolio</h1>
 
 <p align="center">
@@ -69,13 +70,6 @@ This is my **personal developer portfolio**, built to showcase who I am as a Ful
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=Portfolio+Homepage+Screenshot" alt="Portfolio Homepage" width="80%"/>
-</p>
-
-> *(Ei placeholder image-r jaygay apnar actual portfolio-r screenshot upload kore link ta replace korun)*
 
 ---
 
