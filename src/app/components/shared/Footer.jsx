@@ -70,7 +70,7 @@ const Footer = () => {
               {[
                 { icon: <FaGithub />, label: 'GitHub', link: 'https://github.com/eyasinarafat3485-gif' },
                 { icon: <FaLinkedinIn />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/md-eyasin-arafat-webdev' },
-                { icon: <FaFacebookF />, label: 'Facebook', link: 'https://www.facebook.com/share/14QVNWQSDuN/' },
+                { icon: <FaFacebookF />, label: 'Facebook', link: 'https://www.facebook.com/eyasinarafatwebdev12' },
                 { icon: <MdEmail />, label: 'Email', link: 'eyasinwebdev@gmail.com' }
               ].map((social, i) => (
                 <a

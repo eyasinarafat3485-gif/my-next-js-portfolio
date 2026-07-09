@@ -103,7 +103,7 @@ const Banner = () => {
                                 <FaGithub className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-black hover:text-white transition-colors duration-300' />
                             </motion.a>
 
-                            <motion.a whileHover={{ scale: 1.15, y: -4 }} whileTap={{ scale: 0.95 }} href="https://www.facebook.com/share/14QVNWQSDuN/">
+                            <motion.a whileHover={{ scale: 1.15, y: -4 }} whileTap={{ scale: 0.95 }} href="https://www.facebook.com/eyasinarafatwebdev12">
                                 <FaFacebook className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#1877F2] hover:text-white transition-colors duration-300' />
                             </motion.a>
 
