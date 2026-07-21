@@ -20,40 +20,27 @@
     "image": "https://i.ibb.co.com/YBCW8SvJ/Hireloop-Portfolio.png",
     "link": "https://hireloop-web-apps.vercel.app"
   },
-  {
+   {
     "id": 4,
-    "title": "IdeaVault Web App",
-    "description": "An online Explore ideas creative and innovative app.",
-    "image": "https://i.ibb.co.com/21r8CNX2/Screenshot-59.png",
-    "link": "https://idea-vault-web-app.vercel.app"
+    "title": "ElectroMart E-Commerce",
+    "description": "ElectroMart is an e-commerce platform with secure authentication.",
+    "image": "https://res.cloudinary.com/ahtzrewa/image/upload/electross_xq9eou.png",
+    "link": "https://electro-mart-sigma.vercel.app"
   },
-  {
+   {
     "id": 5,
-    "title": "Skill-Sphere learning-app",
-    "description": "An online learning platform with course management.",
-    "image": "https://i.ibb.co/7xzkkFM2/Skill-Sphare.jpg",
-    "link": "https://skill-sphere-learning-app-a-8.vercel.app"
-  },
-  {
-    "id": 6,
     "title": "Alhurrimat E-Commerce",
     "description": "Modern shopping experience with seamless checkout.",
     "image": "https://i.ibb.co/vvcSmpjr/alhurmat.jpg",
     "link": "https://alhurmat.com/farin-hijab"
   },
-   {
-    "id": 7,
-    "title": "Wanderlust-Traveling App",
-    "description": "A trusted partner for exceptional travel experiences.",
-    "image": "https://i.ibb.co.com/LXszmK88/projects-6.png",
-    "link": "https://wardenlust-app.vercel.app"
-  },
   {
-    "id": 8,
-    "title": "KeenKeeper Web App",
-    "description": "A modern social networking app with real-time messaging.",
-    "image": "https://i.ibb.co/FqHw9K55/Keen-Keeper.jpg",
-    "link": "https://my-a07-keen-keeper-app.vercel.app"
+    "id": 6,
+    "title": "NextFabric E-Commerce",
+    "description": "An online e-commerce platform with secure authentication.",
+    "image": "https://res.cloudinary.com/ahtzrewa/image/upload/v1784638869/nextfabric_z9pvah.png",
+    "link": "https://next-fabric.vercel.app"
   }
  
 ]
+

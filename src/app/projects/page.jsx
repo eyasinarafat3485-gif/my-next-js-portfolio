@@ -4,6 +4,7 @@ import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import ProjectCard from "../components/ProjectCard";
 import projects from "@/projects-data.json"
+import Link from "next/link";
 
 const RecentProjects = () => {
   const loopProjects = [...projects, ...projects];
@@ -20,9 +21,9 @@ const RecentProjects = () => {
               Recent <span className="text-red-500">Projects</span>
             </h2>
           </div>
-          <button className="hidden md:flex items-center gap-2 border-2 border-red-500 dark:bg-black dark:text-white text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition-all cursor-pointer duration-300">
-            View all <FiArrowUpRight />
-          </button>
+          <Link href='https://github.com/eyasinarafat3485-gif' className=" md:flex items-center gap-2 border-2 border-red-500 dark:bg-black dark:text-white text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition-all cursor-pointer duration-300">
+            View all in github <FiArrowUpRight />
+          </Link>
         </div>
 
         {/* Carousel Section */}
