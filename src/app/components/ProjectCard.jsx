@@ -20,11 +20,11 @@ function ProjectCard({ project }) {
           <div className={`absolute inset-0 flex flex-col justify-end bg-black/65 p-8 text-white transition-all duration-200 ease-out ${hovered ? "opacity-100" : "opacity-0"}`}>
 
             <div className={`transform transition-transform duration-200 ease-out ${hovered ? "translate-y-0" : "translate-y-3"}`}>
-              <h3 className="text-xl font-bold mb-1">
+              <h3 className="text-xl font-semibold md:font-bold mb-1 line-clamp-1">
                 {project.title}
               </h3>
 
-              <p className="text-sm text-gray-200 mb-4 line-clamp-2 opacity-90">
+              <p className="text-[12px] md:text-sm text-gray-200 mb-3 line-clamp-2 opacity-90">
                 {project.description}
               </p>
 

@@ -14,7 +14,7 @@ const RecentProjects = () => {
       <div className="container mx-auto">
 
         {/* Header Section */}
-        <div className="flex justify-between items-end mb-12">
+        <div className="flex justify-between items-end mb-6 md:mb-12">
           <div>
             <span className="text-black dark:text-orange-500 font-bold uppercase tracking-widest text-sm">Portfolio</span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mt-2">
@@ -28,7 +28,7 @@ const RecentProjects = () => {
 
         {/* Carousel Section */}
         <div className="relative">
-          <div className="carousel-track flex w-max gap-6 py-4 cursor-grab">
+          <div className="carousel-track flex w-max gap-6 py-1 cursor-grab">
             {loopProjects.map((project, index) => (
               <ProjectCard key={`${project.id}-${index}`} project={project} />
             ))}
