@@ -190,16 +190,16 @@ const AboutMe = () => {
     };
 
     return (
-        <motion.section 
-            id='about' 
+        <motion.section
+            id='about'
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeInUp}
-            className="w-[92%] mt-10 md:mt-0 mx-auto shadow-lg rounded-3xl bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 transition-colors duration-500"
+            className="w-[92%] max-w-full overflow-hidden mt-10 md:mt-0 mx-auto shadow-lg rounded-3xl bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 transition-colors duration-500"
         >
             <div className="w-full mx-auto flex flex-col lg:flex-row gap-12 items-start">
-                
+
                 {/* Left (Image & Timeline) - Fade In Left */}
                 <motion.div variants={fadeInLeft} className="w-full lg:w-1/3 flex flex-col items-center lg:items-start ">
                     {/* Illustration Image */}
@@ -211,9 +211,9 @@ const AboutMe = () => {
                             className="w-full h-65 object-cover block dark:hidden transition-transform duration-500 hover:scale-105"
                         />
                         {/* Dark Mode Image */}
-                        <Image 
-                            src={darkWork} 
-                            alt="Developer Illustration Dark" 
+                        <Image
+                            src={darkWork}
+                            alt="Developer Illustration Dark"
                             className="w-full h-65 object-cover hidden dark:block transition-transform duration-500 hover:scale-105"
                         />
                     </div>
@@ -222,8 +222,8 @@ const AboutMe = () => {
                     <div className='flex flex-col md:pl-8 pt-5 dark:pt-8'>
                         <motion.div variants={containerVariants} className="relative border-l-2 border-red-500 ">
                             {infoData.map((item, index) => (
-                                <motion.div 
-                                    key={index} 
+                                <motion.div
+                                    key={index}
                                     variants={fadeInLeft}
                                     className="mb-3 ml-6 relative"
                                 >
@@ -231,7 +231,7 @@ const AboutMe = () => {
                                     <div className="absolute h-3.5 w-3.5 mt-1.5 -left-8 bg-red-500 rounded-full border-2 border-white dark:border-white/80"></div>
 
                                     <p className="text-gray-800">
-                                        <span className="font-semibold text-lg dark:text-orange-500 light:text-black">{item.label}: </span> 
+                                        <span className="font-semibold text-lg dark:text-orange-500 light:text-black">{item.label}: </span>
                                         <span className='text-[16px] dark:text-white light:text-black'>{item.value}</span>
                                     </p>
                                 </motion.div>
@@ -240,8 +240,8 @@ const AboutMe = () => {
                     </div>
 
                     {/* Download Button with subtle pulse hover */}
-                    <motion.button 
-                        onClick={handleDownloadCv} 
+                    <motion.button
+                        onClick={handleDownloadCv}
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.98 }}
                         className="relative inline-flex items-center justify-center p-[2px] rounded-full overflow-hidden group ml-8 m-5 cursor-pointer"
@@ -270,7 +270,7 @@ const AboutMe = () => {
                             About Me— <span className="text-red-600 decoration-red-500 dark:text-red-500">Full Stack Web Developer</span>
                         </h2>
                         {/* Animated underline reveal */}
-                        <motion.div 
+                        <motion.div
                             initial={{ width: 0 }}
                             whileInView={{ width: "92%" }}
                             transition={{ duration: 0.8, delay: 0.3 }}
@@ -298,7 +298,7 @@ const AboutMe = () => {
                             className="mt-2 bg-[#FF5A5F] text-white px-5 py-1 rounded-full font-semibold md:hidden">
                             {isExpanded ? "See less" : "See more"}
                         </button>
-                        
+
                         <p className='text-[16px] dark:text-white/65 light:text-black'>
                             I focus on clean architecture, smooth performance, and a polished user experience. Every line of code I write is aimed at solving real-world problems with reliability, security, and speed.
                         </p>
