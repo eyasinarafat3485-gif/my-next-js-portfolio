@@ -21,7 +21,7 @@ const RecentProjects = () => {
               Recent <span className="text-red-500">Projects</span>
             </h2>
           </div>
-          <Link href='https://github.com/eyasinarafat3485-gif' className=" md:flex items-center gap-2 border-2 border-red-500 dark:bg-black dark:text-white text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition-all cursor-pointer duration-300">
+          <Link href='https://github.com/eyasinarafat3485-gif' className="hidden md:flex items-center gap-2 border-2 border-red-500 dark:bg-black dark:text-white text-slate-900 font-semibold px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition-all cursor-pointer duration-300">
             View all in github <FiArrowUpRight />
           </Link>
         </div>
