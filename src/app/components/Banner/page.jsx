@@ -56,7 +56,7 @@ const Banner = () => {
                     </div>
 
                     <div className='text-center md:text-left md:w-full md:items-start mx-auto md:mx-0'>
-                        <h3 className="text-lg md:text-xl text-gray-500 mb-2">
+                        <h3 className="text-lg md:text-xl dark:text-white/65 mb-2">
                             Hey, I'm{' '}
                             <motion.span
                                 animate={{ rotate: [0, 15, -10, 15, 0] }}
@@ -76,7 +76,7 @@ const Banner = () => {
                         </h1>
                     </div>
 
-                    <div className="text-xl md:text-2xl text-gray-500 text-center md:text-start font-medium">
+                    <div className="text-xl md:text-2xl dark:text-white/65 text-center md:text-start font-medium">
                         <span className="mr-1">I am a</span>
                         <TypeAnimation
                             sequence={[
