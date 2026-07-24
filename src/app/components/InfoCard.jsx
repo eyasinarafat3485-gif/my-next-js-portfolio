@@ -25,10 +25,6 @@ const InfoCard = () => {
           </a>
           <br />
         </p>
-        {/* <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
-          +880 1304 513475 <br />
-          +880 1960 421858 <br />
-        </p> */}
 
         <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
           <span className="w-[8px] h-[8px] rounded-full bg-blue-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
@@ -44,18 +40,13 @@ const InfoCard = () => {
         <h3 className="font-bold text-gray-800 dark:text-orange-500 mb-2">Email</h3>
         <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=eyasinwebdev@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-red-500 underline transition-colors"
+            href="mailto:eyasinwebdev@gmail.com"
+            className="text-[16px] text-black dark:text-white hover:text-red-500 underline transition-colors"
           >
             eyasinwebdev@gmail.com
           </a>
           <br />
         </p>
-        {/* <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
-                eyasinwebdev@gmail.com <br />
-              </p> */}
 
         <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
           <span className="w-[8px] h-[8px] rounded-full bg-orange-500 shadow-[0_0_15px_#22c55e] animate-pulse" />

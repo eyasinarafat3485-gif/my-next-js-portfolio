@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
 
           {/* Social Section */}
-          {/* <div className="relative">
+          <div className="relative">
             <h3 className="text-[13px] tracking-[2.5px] uppercase text-orange-500 font-semibold mb-5">
               Connect
             </h3>
@@ -71,29 +71,23 @@ const Footer = () => {
                 { icon: <FaGithub />, label: 'GitHub', link: 'https://github.com/eyasinarafat3485-gif' },
                 { icon: <FaLinkedinIn />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/md-eyasin-arafat-webdev' },
                 { icon: <FaFacebookF />, label: 'Facebook', link: 'https://www.facebook.com/eyasinarafatwebdev12' },
-                { icon: <MdEmail />, label: 'Email', link: 'eyasinwebdev@gmail.com' }
+                { icon: <MdEmail />, label: 'Email', link: 'mailto:eyasinwebdev@gmail.com' }
               ].map((social, i) => (
                 <a
                   key={i}
-                  href={social.label === 'Email' ? '#' : social.link}
-                  onClick={(e) => {
-                    if (social.label === 'Email') {
-                      e.preventDefault();
-                      window.location.href = `mailto:${social.link}`;
-                    }
-                  }}
-                  target={social.label === 'Email' ? '_self' : '_blank'}
+                  href={social.link}
+                  target="_blank"
                   rel="noopener noreferrer"
                   title={social.label}
-                  className="w-[40px] h-[40px] border rounded-full flex items-center justify-center text-white text-[16px] transition-all duration-300 hover:scale-110 cursor-pointer hover:text-black  border-gray-500  dark:text-black bg-black/65 hover-3d hover:bg-white dark:bg-white/65"
+                  className="w-[40px] h-[40px] border rounded-full flex items-center justify-center text-white text-[16px] transition-all duration-300 hover:scale-110 cursor-pointer hover:text-black border-gray-500 dark:text-black bg-black/65 hover-3d hover:bg-white dark:bg-white/65"
                 >
                   {social.icon}
                 </a>
               ))}
             </div>
-            
+
             {/* --- UP ARROW BUTTON --- */}
-            {/* <button
+            <button
               onClick={scrollToTop}
               className="absolute -right-4 bottom-0 md:right-0 w-10 h-10 rounded-full border border-orange-400 flex items-center justify-center font-bold text-white hover:text-orange-500 hover:border-[#dc1c1c] bg-red-500 hover:bg-white transition-all duration-300 group shadow-lg"
               aria-label="Scroll to top"
@@ -108,51 +102,7 @@ const Footer = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
               </svg>
             </button>
-          </div> */} 
-
-
-          {/* Social Section */}
-<div className="relative">
-  <h3 className="text-[13px] tracking-[2.5px] uppercase text-orange-500 font-semibold mb-5">
-    Connect
-  </h3>
-  <div className="flex gap-3">
-    {[
-      { icon: <FaGithub />, label: 'GitHub', link: 'https://github.com/eyasinarafat3485-gif' },
-      { icon: <FaLinkedinIn />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/md-eyasin-arafat-webdev' },
-      { icon: <FaFacebookF />, label: 'Facebook', link: 'https://www.facebook.com/eyasinarafatwebdev12' },
-      { icon: <MdEmail />, label: 'Email', link: 'https://mail.google.com/mail/?view=cm&fs=1&to=eyasinwebdev@gmail.com' }
-    ].map((social, i) => (
-      <a
-        key={i}
-        href={social.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        title={social.label}
-        className="w-[40px] h-[40px] border rounded-full flex items-center justify-center text-white text-[16px] transition-all duration-300 hover:scale-110 cursor-pointer hover:text-black border-gray-500 dark:text-black bg-black/65 hover-3d hover:bg-white dark:bg-white/65"
-      >
-        {social.icon}
-      </a>
-    ))}
-  </div>
-  
-  {/* --- UP ARROW BUTTON --- */}
-  <button
-    onClick={scrollToTop}
-    className="absolute -right-4 bottom-0 md:right-0 w-10 h-10 rounded-full border border-orange-400 flex items-center justify-center font-bold text-white hover:text-orange-500 hover:border-[#dc1c1c] bg-red-500 hover:bg-white transition-all duration-300 group shadow-lg"
-    aria-label="Scroll to top"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-5 w-5 transition-transform duration-300 group-hover:-translate-y-1"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
-    </svg>
-  </button>
-</div>
+          </div>
         </div>
 
         {/* Footer Bottom */}
@@ -166,9 +116,9 @@ const Footer = () => {
             Available for work
           </div>
 
-          {/* <p className="text-[13px] text-black/65 dark:text-white/65">
+          <p className="text-[13px] text-black/65 dark:text-white/65">
             Built with <span className="text-[#dc1c1c]">♥</span> 
-          </p> */}
+          </p>
         </div>
       </div>
     </footer>

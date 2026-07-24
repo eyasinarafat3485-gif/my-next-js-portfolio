@@ -104,12 +104,12 @@ const AboutMe = () => {
             {item.label === "Email" ? (
                 <a
                     href={`mailto:${item.value}`}
-                    className="text-[16px] text-black dark:text-white hover:text-red-500 underline transition-colors"
+                    className="text-[16px] text-black ml-2 dark:text-white hover:text-red-500 underline transition-colors"
                 >
                     {item.value}
                 </a>
             ) : (
-                <span className="text-[16px] text-black dark:text-white">
+                <span className="text-[16px] ml-2 text-black dark:text-white">
                     {item.value}
                 </span>
             )}
