@@ -71,7 +71,7 @@ const Banner = () => {
                                 👋
                             </motion.span>
                         </h3>
-                        <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 from-30% via-red-500 to-orange-500 dark:from-white dark:from-30% dark:via-red-400 dark:to-orange-400 tracking-normal antialiased subpixel-antialiased pb-1">
+                        <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 from-30% via-red-500 to-red-500 dark:from-white dark:from-30% dark:via-red-400 dark:to-red-400 tracking-normal antialiased subpixel-antialiased pb-1">
                             Eyasin Arafat
                         </h1>
                     </div>

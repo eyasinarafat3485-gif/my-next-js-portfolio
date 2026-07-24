@@ -71,13 +71,10 @@ const InfoCard = () => {
           </a>
           <br />
         </p>
-        {/* <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
-                Mymenshing, Bangladesh <br />
-              </p> */}
 
         <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
           <span className="w-[8px] h-[8px] rounded-full bg-green-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
-          <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'>Available for Remote Work</p>
+          <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'>Available for <span className='font-extrabold'>REMOTE</span> Work in WorldWide</p>
         </div>
       </div>
     </div>

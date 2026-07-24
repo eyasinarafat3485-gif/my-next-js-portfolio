@@ -7,14 +7,16 @@ import { FaCss } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
 import { SiExpress } from "react-icons/si";
+import { BsTypescript } from "react-icons/bs";
 
 const Skills = [
     { name: "Tailwind & Css3", percent: 100, icon: <FaCss size={32} /> },
     { name: "JavaScript", percent: 90, icon: <FaJs size={32} /> },
+    { name: "TypeScript", percent: 85, icon: <BsTypescript size={32} /> },
     { name: "React js", percent: 100, icon: <FaReact size={32} /> },
     { name: "Next js", percent: 90, icon: <RiNextjsFill size={32} /> },
     { name: "Node.js", percent: 100, icon: <FaNodeJs size={32} /> },
-    { name: "Express js", percent: 85, icon: <SiExpress size={32} /> },
+    { name: "Express js", percent: 90, icon: <SiExpress size={32} /> },
     { name: "MongoDB", percent: 95, icon: <DiMongodb size={32} /> },
     { name: "Git", percent: 100, icon: <FaGit size={32} /> },
     { name: "WordPress", percent: 95, icon: <FaWordpress size={32} /> },
