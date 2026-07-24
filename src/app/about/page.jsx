@@ -52,7 +52,7 @@ const AboutMe = () => {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
-            transition: { staggerChildren: 0.1 } // প্রতিটি আইটেম একের পর এক আসবে
+            transition: { staggerChildren: 0.1 } 
         }
     };
 
@@ -99,8 +99,23 @@ const AboutMe = () => {
 
                                     <p className="text-gray-800">
                                         <span className="font-semibold text-lg dark:text-orange-500 light:text-black">{item.label}: </span>
-                                        <span className='text-[16px] dark:text-white light:text-black'>{item.value}</span>
+                                        {item.label === "Email" ? (
+                                            <a
+                                                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${item.value}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className='text-[16px] dark:text-white light:text-black hover:text-red-500 underline transition-colors'
+                                            >
+                                                {item.value}
+                                            </a>
+                                        ) : (
+                                            <span className='text-[16px] dark:text-white light:text-black'>{item.value}</span>
+                                        )}
                                     </p>
+                                    {/* <p className="text-gray-800">
+                                        <span className="font-semibold text-lg dark:text-orange-500 light:text-black">{item.label}: </span>
+                                        <span className='text-[16px] dark:text-white light:text-black'>{item.value}</span>
+                                    </p> */}
                                 </motion.div>
                             ))}
                         </motion.div>

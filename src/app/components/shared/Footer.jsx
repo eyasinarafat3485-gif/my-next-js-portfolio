@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
+// import { MdEmail } from 'react-icons/md';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -35,9 +35,9 @@ const Footer = () => {
             <p className="text-[13px] text-red-500 mt-2 font-light tracking-wider uppercase">
               Full Stack Developer & Software En.
             </p>
-            <div className="w-8 h-[2px] bg-orange-500 my-4" />
+            <div className="w-10 h-[2px] bg-orange-500 my-4" />
             <p className="text-[14px] text-black/65 dark:text-white/65 leading-relaxed font-light max-w-[260px]">
-              Crafting pixel-perfect digital experiences with clean code and thoughtful design.
+              Crafting pixel-perfect digital experiences with clean code, problem solving and thoughtful design.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ const Footer = () => {
                 { icon: <FaGithub />, label: 'GitHub', link: 'https://github.com/eyasinarafat3485-gif' },
                 { icon: <FaLinkedinIn />, label: 'LinkedIn', link: 'https://www.linkedin.com/in/md-eyasin-arafat-webdev' },
                 { icon: <FaFacebookF />, label: 'Facebook', link: 'https://www.facebook.com/eyasinarafatwebdev12' },
-                { icon: <MdEmail />, label: 'Email', link: 'eyasinwebdev@gmail.com' }
+                // { icon: <MdEmail />, label: 'Email', link: 'eyasinwebdev@gmail.com' }
               ].map((social, i) => (
                 <a
                   key={i}
