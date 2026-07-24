@@ -54,3 +54,17 @@ html.lenis body {
   border-radius: 50%;
 }
 
+/* Toastify auto-close & disappearance fix */
+.Toastify__toast-container {
+  z-index: 99999 !important;
+  position: fixed !important;
+}
+
+.Toastify__toast {
+  min-height: 64px !important;
+}
+
+.Toastify__toast-container--top-right {
+  top: 1em !important;
+  right: 1em !important;
+}

@@ -28,16 +28,18 @@ const FormSection = () => {
         e.target.reset(); 
         toast.success("Thank you! Your message has been sent successfully.", {
           position: "top-right",
-          autoClose: 4000,
+          autoClose: 4000, 
         });
       } else {
         toast.error("Oops! Something went wrong. Please try again.", {
           position: "top-right",
+          autoClose: 4000,
         });
       }
     } catch (err) {
       toast.error("Network error! Please check your connection.", {
         position: "top-right",
+        autoClose: 4000,
       });
     } finally {
       setLoading(false);
@@ -46,7 +48,8 @@ const FormSection = () => {
 
   return (
     <div className="lg:col-span-2 bg-white dark:bg-black order-2 lg:order-1 rounded-2xl shadow-sm border border-gray-100 dark:border-zinc-800 p-8 relative">
-      <ToastContainer />
+      
+      <ToastContainer autoClose={4000} />
       
       <div className="flex items-center gap-3 mb-8">
         <Mail className="text-red-500 w-6 h-6" />

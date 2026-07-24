@@ -6,7 +6,6 @@ import MotionWrapper from "./components/MotionWrapper";
 import SmoothScrolling from "./components/SmoothScroll";
 import CursorFollower from "./components/CursorFollower";
 import NextThemeProvider from "@/providers/NextThemeProvider";
-import { ToastContainer } from "react-toastify";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,7 +57,7 @@ duration-300 min-h-full flex flex-col bg-background text-foreground">
           <Footer />
         </SmoothScrolling>
         </NextThemeProvider>
-        <ToastContainer />
+        
       </body>
     </html>
   );
