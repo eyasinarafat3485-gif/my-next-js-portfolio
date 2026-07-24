@@ -39,21 +39,21 @@ const Experience = () => {
       <div className="space-y-6">
 
         {/* 1 */}
-        <motion.div
+        {/* <motion.div
           {...fadeInUp}
           whileHover={{ x: 6 }} // Interactivity build up
           className="relative bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 p-4 md:p-8 hover:shadow-md transition-all duration-300 overflow-hidden"
-        >
+        > */}
           {/* Professional Left Progress Border Layer */}
-          <motion.div
+          {/* <motion.div
             variants={borderVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             className="absolute left-0 top-0 w-1 bg-red-500 origin-top"
-          />
+          /> */}
 
-          <div className="flex justify-between items-start mb-6">
+          {/* <div className="flex justify-between items-start mb-6">
             <div>
               <h2 className="text-[27px] font-bold text-slate-800 dark:text-orange-500">
                  Full Stack Developer 
@@ -67,14 +67,14 @@ const Experience = () => {
             <div className="text-right">
               <p className="text-red-500 font-semibold">Now</p>
             </div>
-          </div>
+          </div> */}
 
-          <p className="text-gray-500 leading-relaxed">
+          {/* <p className="text-gray-500 leading-relaxed">
             I worked at Bengal-IT as a Full Stack Developer & Software Engineer,
             where I developed modern unique scalable & role-based SaaS applications, handled theme
             development, and managed full web app deployment processes.
-          </p>
-        </motion.div>
+          </p> */}
+        {/* </motion.div> */}
 
         {/* 2 */}
         <motion.div
@@ -140,7 +140,7 @@ const Experience = () => {
               </h2>
 
               <p className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold">
-                Wordpress Web Developer
+                Bengal-it
               </p>
             </div>
 

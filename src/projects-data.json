@@ -6,18 +6,18 @@
     "image": "https://i.ibb.co.com/cSVfV2V2/Bloodportfolio.png",
     "link": "https://assignment-10-client-sooty.vercel.app",
     "githubLink": "https://github.com/eyasinarafat3485-gif/assignment-10",
-    "techStack": ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT", "Better Auth"],
+    "techStack": ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT", "Better Auth", "Framer Motion"],
     "challenges": "Managing real-time donor availability and ensuring accurate location-based matching for emergency requests.",
     "futurePlans": "Implementing push notifications for urgent blood requests and a mobile application version."
   },
   {
-    "id": 4,
+    "id": 2,
     "title": "ElectroMart E-Commerce",
     "description": "ElectroMart is an online electronics store with interactive filtering and secure checkout.",
-    "image": "https://res.cloudinary.com/ahtzrewa/image/upload/electross_xq9eou.png",
+    "image": "https://i.ibb.co.com/W48CqWsN/elec1.png",
     "link": "https://electro-mart-sigma.vercel.app",
     "githubLink": "https://github.com/eyasinarafat3485-gif/ElectroMart-",
-    "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Express.js", "MongoDB", "Better Auth"],
+    "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Express.js", "MongoDB", "Better Auth", "Framer Motion"],
     "challenges": "Optimizing large electronics product search and filtering without triggering unnecessary re-renders.",
     "futurePlans": "Adding product comparison features and dynamic customer review ratings."
   },
@@ -25,11 +25,22 @@
     "id": 3,
     "title": "NextFabric E-Commerce",
     "description": "An advanced fashion platform built with server-side rendering for speed and SEO.",
-    "image": "https://res.cloudinary.com/ahtzrewa/image/upload/v1784638869/nextfabric_z9pvah.png",
+    "image": "https://i.ibb.co.com/0y3ZHrj5/nextf2.png",
     "link": "https://next-fabric.vercel.app",
     "githubLink": "https://github.com/eyasinarafat3485-gif/NextFabric",
-    "techStack": ["Next.js", "Tailwind CSS", "MongoDB", "Prisma"],
+    "techStack": ["Next.js", "Tailwind CSS", "MongoDB", "Express.js", "Better Auth", "Node.js", "Framer Motion"],
     "challenges": "Configuring Next.js SSR and ISR caching strategies for optimal SEO performance.",
     "futurePlans": "Adding a 3D fabric visualizer and automated inventory management."
-  }
+  },
+ {
+  "id": 4,
+  "title": "IdeaVault Platform",
+  "description": "A collaborative platform for developers and creators to organize, share, and refine project ideas with real-time feedback.",
+  "image": "https://i.ibb.co.com/KcfNmKnj/idea4.png",
+  "link": "https://idea-vault-web-app.vercel.app",
+  "githubLink": "https://github.com/eyasinarafat3485-gif/IdeaVault-web-app",
+  "techStack": ["Next.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Framer Motion"],
+  "challenges": "Implementing secure user authorization and real-time state updates for smooth interactive voting and feedback.",
+  "futurePlans": "Integrating AI-powered idea generation assistance and an interactive roadmap feature for active projects."
+ }
 ]
