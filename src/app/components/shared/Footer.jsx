@@ -32,7 +32,7 @@ const Footer = () => {
             <h2 className="font-['Playfair_Display'] text-[28px] font-bold leading-[1.1] tracking-tight text-orange-400">
               Eyasin  Arafat
             </h2>
-            <p className="text-[13px] text-pink-400 mt-2 font-light tracking-wider uppercase">
+            <p className="text-[13px] text-red-500 mt-2 font-light tracking-wider uppercase">
               Full Stack Developer & Software En.
             </p>
             <div className="w-8 h-[2px] bg-orange-500 my-4" />
@@ -122,9 +122,9 @@ const Footer = () => {
             Available for work
           </div>
 
-          <p className="text-[13px] text-black/65 dark:text-white/65">
+          {/* <p className="text-[13px] text-black/65 dark:text-white/65">
             Built with <span className="text-[#dc1c1c]">♥</span> 
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

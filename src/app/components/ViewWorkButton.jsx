@@ -8,7 +8,7 @@ const ViewWorkButton = () => {
             initial="initial"
             whileHover="hover"
             animate="initial"
-            className="group relative cursor-pointer flex items-center gap-3 px-5 py-3 bg-white text-orange-700 font-bold text-[17px] rounded-full border-2 hover:border-red-600 overflow-hidden shadow-lg transition-all"
+            className="group relative cursor-pointer flex items-center gap-3 px-5 py-3 bg-white text-red-500 font-bold text-[17px] rounded-full border-2 hover:border-red-600 overflow-hidden shadow-lg transition-all"
         >
             {/* Background Animation */}
             <motion.div
@@ -17,13 +17,13 @@ const ViewWorkButton = () => {
                     hover: { y: 0 }
                 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="absolute inset-0 bg-orange-700 z-0"
+                className="absolute inset-0 bg-red-500 z-0"
             />
 
             {/* Text Content */}
             <motion.span
                 variants={{
-                    initial: { color: "#c2410c" },
+                    initial: { color: "#EF4444" },
                     hover: { color: "#FFFFFF" }
                 }}
                 className="relative z-10"
@@ -35,7 +35,7 @@ const ViewWorkButton = () => {
             <div className="relative z-10 w-5 h-5 overflow-hidden">
                 <motion.div
                     variants={{
-                        initial: { x: 0, color: "#c2410c" },
+                        initial: { x: 0, color: "#EF4444" },
                         hover: { x: 40 }
                     }}
                     transition={{ duration: 0.3 }}
