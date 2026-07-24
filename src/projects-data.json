@@ -2,45 +2,96 @@
   {
     "id": 1,
     "title": "Blood Bridge",
-    "description": "BloodBridge connects voluntary donors with patients to save lives seamlessly.",
+    "description": "BloodBridge connects voluntary donors with patients to save lives seamlessly. A life-saving web application connecting voluntary blood donors with emergency recipients via location-aware search and donor requests.",
     "image": "https://i.ibb.co.com/cSVfV2V2/Bloodportfolio.png",
+    "gallery": [
+    "https://i.ibb.co.com/QFTrmcfB/blood1.png",
+    "https://i.ibb.co.com/WvptpjYZ/blood2.png"
+  ],
     "link": "https://assignment-10-client-sooty.vercel.app",
     "githubLink": "https://github.com/eyasinarafat3485-gif/assignment-10",
     "techStack": ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "JWT", "Better Auth", "Framer Motion"],
-    "challenges": "Managing real-time donor availability and ensuring accurate location-based matching for emergency requests.",
-    "futurePlans": "Implementing push notifications for urgent blood requests and a mobile application version."
+   "challenges": [
+    "Implementing location-based geospatial querying in MongoDB for instant nearby donor matching.",
+    "Designing a strict donor eligibility algorithm based on last donation dates and medical interval rules.",
+    "Preventing spam emergency requests through phone and email verification workflows."
+  ],
+  "futurePlans": [
+    "Integrating SMS and WhatsApp API gateways for instant broadcast alerts to matching nearby donors.",
+    "Adding a real-time Interactive Map route tracking between donor and hospital location.",
+    "Developing a mobile app version using React Native for push notification alerts."
+  ]
   },
   {
     "id": 2,
     "title": "ElectroMart E-Commerce",
-    "description": "ElectroMart is an online electronics store with interactive filtering and secure checkout.",
+    "description": "ElectroMart is an online electronics store with interactive filtering and secure checkout. It features real-time product filtering by category, price, and specs, along with a persistent shopping cart, secure checkout workflow, and an intuitive admin dashboard for managing inventory and orders effortlessly.",
     "image": "https://i.ibb.co.com/W48CqWsN/elec1.png",
+     "gallery": [
+    "https://i.ibb.co.com/Ngd1TtHF/elec4.png",
+    "https://i.ibb.co.com/wZkrvJbq/elec2.png",
+    "https://i.ibb.co.com/x8cBhYCX/elec3.png"
+  ],
     "link": "https://electro-mart-sigma.vercel.app",
     "githubLink": "https://github.com/eyasinarafat3485-gif/ElectroMart-",
     "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Node.js", "Express.js", "MongoDB", "Better Auth", "Framer Motion"],
-    "challenges": "Optimizing large electronics product search and filtering without triggering unnecessary re-renders.",
-    "futurePlans": "Adding product comparison features and dynamic customer review ratings."
+    "challenges": [
+    "Building complex multi-faceted filter logic (price, brand, specifications) with instant state updates.",
+    "Ensuring secure payment verification and webhooks processing to update order status reliably.",
+    "Managing large product catalogs efficiently using paginated API queries and client-side caching."
+  ],
+  "futurePlans": [
+    "Developing an automated AI product recommendation engine based on user browsing history.",
+    "Adding an automated warranty claim tracking module for buyers.",
+    "Integrating real-time push notifications for flash sales and order status updates."
+  ]
   },
   {
     "id": 3,
     "title": "NextFabric E-Commerce",
-    "description": "An advanced fashion platform built with server-side rendering for speed and SEO.",
+    "description": "An advanced fashion platform built with server-side rendering for speed and SEO. It offers dynamic product filtering, seamless cart management, and optimized asset loading to deliver a ultra-fast shopping experience across all devices.",
     "image": "https://i.ibb.co.com/0y3ZHrj5/nextf2.png",
+    "gallery": [
+    "https://i.ibb.co.com/zWRH1fyT/nextf3.png",
+    "https://i.ibb.co.com/LhJ1XZzg/nextf4.png",
+    "https://i.ibb.co.com/tP4QWnxw/next5.png"
+  ],
     "link": "https://next-fabric.vercel.app",
     "githubLink": "https://github.com/eyasinarafat3485-gif/NextFabric",
     "techStack": ["Next.js", "Tailwind CSS", "MongoDB", "Express.js", "Better Auth", "Node.js", "Framer Motion"],
-    "challenges": "Configuring Next.js SSR and ISR caching strategies for optimal SEO performance.",
-    "futurePlans": "Adding a 3D fabric visualizer and automated inventory management."
+    "challenges": [
+    "Configuring Next.js SSR and ISR caching strategies for optimal dynamic product SEO performance.",
+    "Handling real-time stock synchronization across cart and checkout components to prevent over-ordering.",
+    "Optimizing heavy fabric image assets dynamically without impacting page load metrics."
+  ],
+  "futurePlans": [
+    "Adding an interactive 3D fabric visualizer for enhanced product customization.",
+    "Implementing automated inventory tracking and low-stock email alerts for admins.",
+    "Integrating multi-currency support with dynamic payment gateway routing."
+  ]
   },
  {
   "id": 4,
   "title": "IdeaVault Platform",
-  "description": "A collaborative platform for developers and creators to organize, share, and refine project ideas with real-time feedback.",
+  "description": "A collaborative platform for developers and creators to organize, share, and refine project ideas with real-time feedback. It empowers users to pitch concepts, vote on trending ideas, and build community roadmap strategies with interactive comment threads.",
   "image": "https://i.ibb.co.com/KcfNmKnj/idea4.png",
+  "gallery": [
+    "https://i.ibb.co.com/v4gdDwrH/idea7.png",
+    "https://i.ibb.co.com/1GkrRBpD/idea6.png",
+    "https://i.ibb.co.com/27gVNGrh/idea5.png"
+  ],
   "link": "https://idea-vault-web-app.vercel.app",
   "githubLink": "https://github.com/eyasinarafat3485-gif/IdeaVault-web-app",
   "techStack": ["Next.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Framer Motion"],
-  "challenges": "Implementing secure user authorization and real-time state updates for smooth interactive voting and feedback.",
-  "futurePlans": "Integrating AI-powered idea generation assistance and an interactive roadmap feature for active projects."
- }
+  "challenges": [
+    "Implementing user-based authentication and role management.",
+    "Handling real-time state updates for interactive voting without lag.",
+    "Managing complex database queries for filtering and searching ideas."
+  ],
+  "futurePlans": [
+    "Integrating AI-powered assistance for automatic idea generation.",
+    "Building an interactive visual roadmap feature for active projects.",
+    "Adding real-time group chat and collaborative feedback channels."
+  ]
+}
 ]
