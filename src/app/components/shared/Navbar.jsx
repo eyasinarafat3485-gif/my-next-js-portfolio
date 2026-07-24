@@ -101,8 +101,8 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         <ul className={`
-          md:hidden absolute right-3 w-35 bg-white/95 dark:bg-black backdrop-blur-xl border border-red-50 flex flex-col gap-1 shadow-2xl rounded-md transition-all duration-200 ease-in-out
-          ${open ? 'top-[50px] opacity-100 visible' : 'top-[50px] opacity-0 invisible'}
+          md:hidden absolute right-3 w-35 bg-gradient-to-br from-pink-100 via-slate-100 dark:from-black dark:via-slate-800 backdrop-blur-xl border border-red-50 flex flex-col gap-1 shadow-2xl rounded-md transition-all duration-200 ease-in-out
+          ${open ? 'top-[45px] opacity-100 visible' : 'top-[45px] opacity-0 invisible'}
         `}>
           {navLinks.map((link) => (
             <li key={link.id} onClick={() => { setOpen(false); setActivePath(link.path); }}>
