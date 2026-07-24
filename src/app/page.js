@@ -5,11 +5,13 @@ import Experience from "./components/Experience/page";
 import RecentProjects from "./projects/page";
 import LetsWork from "./let's Work/page";
 import Service from "./services/page";
+import Preloader from "./components/Preloader";
 
 
 export default function Home() {
   return (
     <div>
+      <Preloader>
       <Banner />
       <AboutMe />
       {/* <CraftedProjects /> */}
@@ -17,6 +19,7 @@ export default function Home() {
       <Experience />
       <Service />
       <LetsWork />
+      </Preloader>
     </div>
   );
 }

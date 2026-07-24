@@ -10,21 +10,21 @@ const InfoCard = () => {
         </div>
         <h3 className="font-bold text-gray-800 dark:text-orange-500 mb-2">Phone</h3>
         <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
-  <a 
-    href="tel:+8801304513475" 
-    className="hover:text-red-500 transition-colors"
-  >
-    +880 1304 513475
-  </a>
-  <br />
-  <a 
-    href="tel:+8801960421858" 
-    className="hover:text-red-500 transition-colors"
-  >
-    +880 1960 421858
-  </a>
-  <br />
-</p>
+          <a
+            href="tel:+8801304513475"
+            className="hover:text-red-500 transition-colors"
+          >
+            +880 1304 513475
+          </a>
+          <br />
+          <a
+            href="tel:+8801960421858"
+            className="hover:text-red-500 transition-colors"
+          >
+            +880 1960 421858
+          </a>
+          <br />
+        </p>
         {/* <p className="text-gray-500 dark:text-white/75 text-sm leading-relaxed">
           +880 1304 513475 <br />
           +880 1960 421858 <br />

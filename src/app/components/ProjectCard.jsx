@@ -1,47 +1,120 @@
-import { useState } from "react";
-import { FiArrowUpRight } from "react-icons/fi";
+// import { useState } from "react";
+// import { FiArrowUpRight } from "react-icons/fi";
 
-function ProjectCard({ project }) {
+// function ProjectCard({ project }) {
+//   const [hovered, setHovered] = useState(false);
+
+//   return (
+//     <div
+//       onMouseEnter={() => setHovered(true)}
+//       onMouseLeave={() => { setHovered(false)}}
+//       className="relative p-[2px] rounded-[2rem] transition-all duration-50 h-[200px] w-[240px] md:h-[300px] md:w-[340px] shrink-0">
+        
+//       {/* Inner Content */}
+//       <div className="relative h-full w-full overflow-hidden rounded-[1.85rem] bg-white dark:bg-slate-500/70  shadow-lg p-2">
+//         <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] bg-gray-200">
+
+//           <img src={project.image} alt={project.title} className={`h-full w-full object-cover transition-transform duration-50 ease-out ${hovered ? "scale-105" : ""}`} />
+ 
+//           {/* Overlay */}
+//           <div className={`absolute inset-0 flex flex-col justify-end bg-black/65 p-8 text-white transition-all duration-200 ease-out ${hovered ? "opacity-100" : "opacity-0"}`}>
+
+//             <div className={`transform transition-transform duration-200 ease-out ${hovered ? "translate-y-0" : "translate-y-3"}`}>
+//               <h3 className="text-xl font-semibold md:font-bold mb-1 line-clamp-1">
+//                 {project.title}
+//               </h3>
+
+//               <p className="text-[12px] md:text-sm text-gray-200 mb-3 line-clamp-2 opacity-90">
+//                 {project.description}
+//               </p>
+
+//               <a
+//                 href={project.link}
+//                 target="_blank"
+//                 rel="noreferrer"
+//                 className="flex items-center gap-2 bg-red-500 text-white w-fit px-4 py-2 rounded-full text-xs font-semibold hover:bg-red-600 active:scale-95 transition-all duration-150"
+//               >
+//                 Live Demo <FiArrowUpRight />
+//               </a>
+//             </div>
+//           </div>
+
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+// export default ProjectCard;
+
+
+import { useState } from "react";
+import { FiArrowUpRight, FiInfo } from "react-icons/fi";
+
+function ProjectCard({ project, onOpenDetails }) {
   const [hovered, setHovered] = useState(false);
 
   return (
     <div
       onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => { setHovered(false)}}
-      className="relative p-[2px] rounded-[2rem] transition-all duration-50 h-[200px] w-[240px] md:h-[300px] md:w-[340px] shrink-0">
-        
+      onMouseLeave={() => setHovered(false)}
+      className="relative p-[2px] rounded-[2rem] transition-all duration-150 h-[220px] w-[260px] md:h-[320px] md:w-[340px] shrink-0"
+    >
       {/* Inner Content */}
-      <div className="relative h-full w-full overflow-hidden rounded-[1.85rem] bg-white dark:bg-slate-500/70  shadow-lg p-2">
+      <div className="relative h-full w-full overflow-hidden rounded-[1.85rem] bg-white dark:bg-slate-500/70 shadow-lg p-2">
         <div className="relative h-full w-full overflow-hidden rounded-[1.5rem] bg-gray-200">
+          <img
+            src={project.image}
+            alt={project.title}
+            className={`h-full w-full object-cover transition-transform duration-300 ease-out ${
+              hovered ? "scale-105" : ""
+            }`}
+          />
 
-          <img src={project.image} alt={project.title} className={`h-full w-full object-cover transition-transform duration-50 ease-out ${hovered ? "scale-105" : ""}`} />
- 
           {/* Overlay */}
-          <div className={`absolute inset-0 flex flex-col justify-end bg-black/65 p-8 text-white transition-all duration-200 ease-out ${hovered ? "opacity-100" : "opacity-0"}`}>
-
-            <div className={`transform transition-transform duration-200 ease-out ${hovered ? "translate-y-0" : "translate-y-3"}`}>
-              <h3 className="text-xl font-semibold md:font-bold mb-1 line-clamp-1">
+          <div
+            className={`absolute inset-0 flex flex-col justify-end bg-black/75 p-6 text-white transition-all duration-200 ease-out ${
+              hovered ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div
+              className={`transform transition-transform duration-200 ease-out ${
+                hovered ? "translate-y-0" : "translate-y-3"
+              }`}
+            >
+              <h3 className="text-lg md:text-xl font-semibold md:font-bold mb-1 line-clamp-1">
                 {project.title}
               </h3>
 
-              <p className="text-[12px] md:text-sm text-gray-200 mb-3 line-clamp-2 opacity-90">
+              <p className="text-[12px] md:text-xs text-gray-300 mb-4 line-clamp-2 opacity-90">
                 {project.description}
               </p>
 
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 bg-red-500 text-white w-fit px-4 py-2 rounded-full text-xs font-semibold hover:bg-red-600 active:scale-95 transition-all duration-150"
-              >
-                Live Demo <FiArrowUpRight />
-              </a>
+              {/* Action Buttons */}
+              <div className="flex items-center gap-2 flex-wrap">
+                {/* Details Button (Trigger Modal) */}
+                <button
+                  onClick={() => onOpenDetails(project)}
+                  className="flex items-center gap-1 bg-orange-500 text-white px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-orange-600 cursor-pointer active:scale-95 transition-all duration-150"
+                >
+                  <FiInfo /> View Details
+                </button>
+
+                {/* Live Link */}
+                <a
+                  href={project.link || project.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-1 bg-red-500 text-white px-3 py-1.5 rounded-full text-xs font-semibold hover:bg-red-600 active:scale-95 transition-all duration-150"
+                >
+                  Live Project <FiArrowUpRight />
+                </a>
+              </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   );
 }
+
 export default ProjectCard;
