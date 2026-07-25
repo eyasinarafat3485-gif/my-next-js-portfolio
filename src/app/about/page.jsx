@@ -133,12 +133,12 @@ const AboutMe = () => {
                         <span className="absolute inset-0 rounded-full bg-red-500/20 blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></span>
 
                         {/* Button Content */}
-                        <span className="relative z-10 flex items-center gap-2 px-7 py-3 rounded-full bg-gradient-to-r from-red-600 to-red-500 border-2 text-white font-bold tracking-wide transition-all duration-300 group-hover:from-red-500 group-hover:to-red-600 shadow-[0_12px_35px_rgba(220,38,38,0.45)]">
+                        <span className="relative z-10 flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-red-600 to-red-500 border-2 text-white font-bold tracking-wide transition-all duration-300 group-hover:from-red-500 group-hover:to-red-600 shadow-[0_12px_35px_rgba(220,38,38,0.45)]">
                             {/* Icon */}
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-0.5">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16" />
                             </svg>
-                            Download CV
+                            Download Resume
                         </span>
                     </motion.button>
                 </motion.div>

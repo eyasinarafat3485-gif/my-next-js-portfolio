@@ -8,7 +8,7 @@ const ViewWorkButton = () => {
             initial="initial"
             whileHover="hover"
             animate="initial"
-            className="group relative cursor-pointer flex items-center gap-3 px-5 py-3 bg-white text-red-500 font-bold text-[17px] rounded-full border-2 hover:border-red-600 overflow-hidden shadow-lg transition-all"
+            className="group relative cursor-pointer flex items-center gap-3 px-5 py-3 bg-white text-red-500 font-bold text-[14px] rounded-full border-2 hover:border-red-600 overflow-hidden shadow-lg transition-all"
         >
             {/* Background Animation */}
             <motion.div

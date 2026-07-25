@@ -98,12 +98,12 @@ const Experience = () => {
               </h2>
 
               <a
-                href="https://auspify.com"
+                href="https://codveda.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold hover:underline"
               >
-                Auspify Technologies (India)
+                Codveda Technologies (India)
               </a>
 
             </div>
