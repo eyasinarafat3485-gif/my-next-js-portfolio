@@ -147,7 +147,7 @@ const AboutMe = () => {
                 <motion.div variants={fadeInRight} className="w-full lg:w-2/3 md:pr-10 ">
                     <div className="w-fit">
                         <h2 className="text-3xl font-extrabold text-[#0F172A] text-center md:text-left p-5 md:pl-4 dark:text-white/75 light:text-black">
-                            About Me— <span className="text-red-600 decoration-red-500 dark:text-red-500">Full Stack Web Developer</span>
+                            About Me— <span className="text-red-600 decoration-red-500 dark:text-red-500">Developing Journey</span>
                         </h2>
                         {/* Animated underline reveal */}
                         <motion.div

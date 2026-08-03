@@ -80,9 +80,10 @@ const Banner = () => {
                         <span className="mr-1">I am a</span>
                         <TypeAnimation
                             sequence={[
-                                'Full Stack Developer', 2000,
+                                'Frontend Developer', 2000,
                                 'MERN Stack Expert', 2000,
                                 'WordPress Developer', 2000,
+                                // 'Full Stack Developer', 2000,
                             ]}
                             wrapper="span"
                             speed={50}
