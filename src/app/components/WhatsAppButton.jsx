@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 export default function WhatsAppButton() {
     const phoneNumber = "8801960421858";
-    const defaultMessage = encodeURIComponent("Hello Bengal-IT, I would like to inquire about your services.");
+    const defaultMessage = encodeURIComponent("Hello Eyasin, I would like to inquire about your services.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${defaultMessage}`;
 
     const handleWhatsAppClick = () => {
@@ -16,10 +16,9 @@ export default function WhatsAppButton() {
         <button
             onClick={handleWhatsAppClick}
             type="button"
-            aria-label="Contact Bengal-IT on WhatsApp"
+            aria-label="Contact Eyasin on WhatsApp"
             className="fixed bottom-6 right-6 z-50 flex items-center justify-center p-3.5 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-110 hover:shadow-xl hover:shadow-[#25D366]/30 transition-all duration-300 group cursor-pointer border-0 outline-none"
         >
-            {/* ছবিতে দেখানো স্ট্যান্ডার্ড WhatsApp আইকন */}
             <FaWhatsapp className="w-7 h-7 text-white" />
 
             {/* Hover Tooltip */}
