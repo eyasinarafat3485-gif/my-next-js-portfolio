@@ -4,12 +4,12 @@ import { Download } from 'lucide-react';
 
 const DownloadButton = () => {
     const handleDownloadCv = () => {
-        const cvUrl = "/Eyasin-Arafat-Resume.pdf";
+        const cvUrl = "/Eyasin-Resume.pdf";
 
         const link = document.createElement("a");
         link.href = cvUrl;
 
-        link.setAttribute("download", "Eyasin-Arafat-Resume.pdf");
+        link.setAttribute("download", "Eyasin-Resume.pdf");
 
         document.body.appendChild(link);
         link.click();

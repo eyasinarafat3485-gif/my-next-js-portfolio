@@ -9,10 +9,10 @@ import { motion } from 'framer-motion';
 
 const AboutMe = () => {
     const handleDownloadCv = () => {
-        const cvUrl = "/Eyasin-Arafat-Resume.pdf";
+        const cvUrl = "/Eyasin-Resume.pdf";
         const link = document.createElement("a");
         link.href = cvUrl;
-        link.setAttribute("download", "Eyasin-Arafat-Resume.pdf");
+        link.setAttribute("download", "Eyasin-Resume.pdf");
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

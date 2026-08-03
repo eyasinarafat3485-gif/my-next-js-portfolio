@@ -38,7 +38,7 @@ const LoadingSpinner = () => {
         className="mt-6 text-center"
       >
         <p className="text-sm font-semibold tracking-widest text-slate-800 dark:text-slate-200 uppercase">
-          Eyasin<span className="text-red-500">.Dev</span>
+          Eyasin-<span className="text-red-500">WEBDev</span>
         </p>
         <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 animate-pulse">
           Loading ...

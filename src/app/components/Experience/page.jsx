@@ -109,12 +109,12 @@ const Experience = () => {
             </div>
 
             <div className="text-right">
-              <p className="text-red-500 font-semibold">Q1 - Q2 2026</p>
+              <p className="text-red-500 font-semibold"> Q2 2026</p>
             </div>
           </div>
 
           <p className="text-gray-500 leading-relaxed">
-            Auspify Technologies excels in Frontend development, crafting stunning and highly functional websites. As a Remote Frontend Intern, I am eager to leverage modern web technologies to build responsive, pixel-perfect user interfaces.
+            Codveda Technologies excels in Frontend development, crafting stunning and highly functional websites. As a Remote Frontend Intern, I am eager to leverage modern web technologies to build responsive, pixel-perfect user interfaces.
           </p>
         </motion.div>
 
@@ -146,7 +146,7 @@ const Experience = () => {
 
             <div className="text-right">
               <p className="text-red-500 font-semibold">
-                Q3 - Q4 2025
+                Q2 - Q4 2025
               </p>
             </div>
           </div>

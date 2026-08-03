@@ -20,7 +20,7 @@ const Banner = () => {
             opacity: 1,
             transition: {
                 staggerChildren: 0.15,
-                delayChildren: 0.1
+                delayChildren: 2.2
             }
         }
     };
@@ -61,7 +61,7 @@ const Banner = () => {
                             <motion.span
                                 animate={{ rotate: [0, 15, -10, 15, 0] }}
                                 transition={{
-                                    duration: 2.5,
+                                    duration: 1,
                                     repeat: Infinity,
                                     repeatDelay: 1,
                                     ease: "easeInOut",
@@ -96,19 +96,19 @@ const Banner = () => {
                         <p className='font-semibold text-gray-600 dark:text-gray-300'>Connect :</p>
                         <div className='flex text-center gap-3 md:gap-4 align-center'>
                             <motion.a whileHover={{ scale: 1.15, y: -4 }} whileTap={{ scale: 0.95 }} href="https://www.linkedin.com/in/md-eyasin-arafat-webdev">
-                                <FaLinkedin className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#0077B5] hover:text-white transition-colors duration-300' />
+                                <FaLinkedin className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#0077B5] hover:text-white transition-colors duration-500' />
                             </motion.a>
 
                             <motion.a whileHover={{ scale: 1.15, y: -4 }} whileTap={{ scale: 0.95 }} href="https://github.com/eyasinarafat3485-gif">
-                                <FaGithub className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-black hover:text-white transition-colors duration-300' />
+                                <FaGithub className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-black hover:text-white transition-colors duration-500' />
                             </motion.a>
 
                             <motion.a whileHover={{ scale: 1.15, y: -4 }} whileTap={{ scale: 0.95 }} href="https://www.facebook.com/eyasinarafatwebdev12">
-                                <FaFacebook className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#1877F2] hover:text-white transition-colors duration-300' />
+                                <FaFacebook className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#1877F2] hover:text-white transition-colors duration-500' />
                             </motion.a>
 
                             <motion.a whileHover={{ scale: 1.15, y: -4 }} whileTap={{ scale: 0.95 }} href="https://wa.me/8801960421858">
-                                <IoLogoWhatsapp className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#25D366] hover:text-white transition-colors duration-300' />
+                                <IoLogoWhatsapp className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#25D366] hover:text-white transition-colors duration-500' />
                             </motion.a>
                         </div>
                     </div>
@@ -127,12 +127,12 @@ const Banner = () => {
                             opacity: { duration: 0.8, ease: "easeOut" },
                             scale: { duration: 0.8, ease: "easeOut" },
                             y: {
-                                duration: 3.5,
+                                duration: 3,
                                 repeat: Infinity,
                                 ease: "easeInOut"
                             }
                         }}
-                        whileHover={{ scale: 1.03 }}
+                        whileHover={{ scale: 1.02 }}
                         className='w-full h-auto drop-shadow-xl'
                     >
                         <Image src={myImg} alt="Eyasin Arafat" className="w-full h-auto" priority />
@@ -164,7 +164,7 @@ const Banner = () => {
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.6 }}
+                transition={{ delay: 2.2, duration: 0.6 }}
             >
                 <SkillsCarousel />
             </motion.div>
