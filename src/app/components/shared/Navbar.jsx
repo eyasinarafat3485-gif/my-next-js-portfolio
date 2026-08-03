@@ -79,8 +79,8 @@ const Navbar = () => {
                 href={link.path}
                 onClick={() => setActivePath(link.path)}
                 className={`flex items-center gap-2 transition-colors text-lg ${activePath === link.path
-                  ? 'text-red-500 font-bold'
-                  : 'text-gray-800 dark:text-white'
+                  ? 'text-red-500 font-bold hover:border-b-2 border-red-500 rounded-lg'
+                  : 'text-gray-800 dark:text-white hover:border-b-2 border-red-500 rounded-lg'
                   }`}
               >
                 <span className='hidden lg:block text-xl'>{link.icon}</span>
