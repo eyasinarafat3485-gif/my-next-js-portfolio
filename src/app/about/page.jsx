@@ -32,7 +32,6 @@ const AboutMe = () => {
         { label: "Nick Name", value: "Eyasin" },
     ];
 
-    // রিয়াজুসেবল অ্যানিমেশন ভেরিয়েন্ট
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
