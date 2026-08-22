@@ -44,8 +44,8 @@ const Experience = () => {
           whileHover={{ x: 6 }} // Interactivity build up
           className="relative bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 p-4 md:p-8 hover:shadow-md transition-all duration-300 overflow-hidden"
         > */}
-          {/* Professional Left Progress Border Layer */}
-          {/* <motion.div
+        {/* Professional Left Progress Border Layer */}
+        {/* <motion.div
             variants={borderVariants}
             initial="hidden"
             whileInView="visible"
@@ -53,7 +53,7 @@ const Experience = () => {
             className="absolute left-0 top-0 w-1 bg-red-500 origin-top"
           /> */}
 
-          {/* <div className="flex justify-between items-start mb-6">
+        {/* <div className="flex justify-between items-start mb-6">
             <div>
               <h2 className="text-[27px] font-bold text-slate-800 dark:text-orange-500">
                  Full Stack Developer 
@@ -69,7 +69,7 @@ const Experience = () => {
             </div>
           </div> */}
 
-          {/* <p className="text-gray-500 leading-relaxed">
+        {/* <p className="text-gray-500 leading-relaxed">
             I worked at Bengal-IT as a Full Stack Developer & Software Engineer,
             where I developed modern unique scalable & role-based SaaS applications, handled theme
             development, and managed full web app deployment processes.
@@ -94,17 +94,17 @@ const Experience = () => {
           <div className="flex justify-between items-start mb-6">
             <div>
               <h2 className="text-[27px] font-bold text-slate-800 dark:text-orange-500">
-                Frontend Developer (Internship)
+                MERN Stack Developer (Remote)
               </h2>
 
               <a
-                href="https://codveda.com"
+                href="https://bengal-it-eight.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold hover:underline"
               >
-                Codveda Technologies (India)
-              </a>
+                Bengal-IT</a> <span className="pt-2">(Mirpur, Dhaka, Bangladesh)</span>
+
 
             </div>
 
@@ -114,7 +114,7 @@ const Experience = () => {
           </div>
 
           <p className="text-gray-500 leading-relaxed">
-            Codveda Technologies excels in Frontend development, crafting stunning and highly functional websites. As a Remote Frontend Intern, I am eager to leverage modern web technologies to build responsive, pixel-perfect user interfaces.
+            Bengal-it excels in full-stack web development, building robust, scalable, and highly functional web applications. As a Hybrid MERN Stack Developer in Bangladesh, I am eager to leverage modern technologies like MongoDB, Express.js, React.js, and Node.js to develop responsive, pixel-perfect user interfaces and seamless backend architectures.
           </p>
         </motion.div>
 
@@ -139,14 +139,19 @@ const Experience = () => {
                 Wordpress Developer
               </h2>
 
-              <p className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold">
-                Bengal-it
-              </p>
+              <span
+
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold "
+              >
+                Wordpress Developer</span> <span className="pt-2">(Internship)</span>
+
             </div>
 
             <div className="text-right">
               <p className="text-red-500 font-semibold">
-                Q2 - Q4 2025
+                Q3 - Q4 2025
               </p>
             </div>
           </div>
