@@ -55,8 +55,8 @@ const Banner = () => {
                         <p className='animate-bounce text-sm font-medium'>Open to opportunities</p>
                     </div>
 
-                    <div className='text-center md:text-left md:w-full md:items-start mx-auto md:mx-0'>
-                        <h3 className="text-lg md:text-xl dark:text-white/65 mb-2">
+                    <div className='flex flex-wrap md:flex-col items-center justify-center md:items-start text-center md:text-left mx-auto md:mx-0 gap-x-2 gap-y-1 mb-2'>
+                        <h3 className="text-base sm:text-lg md:text-xl dark:text-white/75 flex items-center gap-1">
                             Hey, I'm{' '}
                             <motion.span
                                 animate={{ rotate: [0, 15, -10, 15, 0] }}
@@ -66,17 +66,17 @@ const Banner = () => {
                                     repeatDelay: 1,
                                     ease: "easeInOut",
                                 }}
-                                className="text-2xl md:text-3xl origin-bottom-right inline-block"
+                                className="text-xl sm:text-2xl md:text-3xl origin-bottom-right inline-block"
                             >
                                 👋
                             </motion.span>
                         </h3>
-                        <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 from-30% via-red-500 to-red-500 dark:from-white dark:from-30% dark:via-red-400 dark:to-red-400 tracking-normal antialiased subpixel-antialiased pb-1">
+                        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 from-30% via-red-500 to-red-500 dark:from-white dark:from-30% dark:via-red-400 dark:to-red-400 tracking-normal antialiased subpixel-antialiased pb-1 whitespace-nowrap">
                             Eyasin Arafat
                         </h1>
                     </div>
 
-                    <div className="text-xl md:text-2xl dark:text-white/65 text-center md:text-start font-medium">
+                    <div className="text-base sm:text-xl md:text-2xl dark:text-white/65 text-center md:text-start font-medium whitespace-nowrap">
                         <span className="mr-1">I am a</span>
                         <TypeAnimation
                             sequence={[
@@ -88,14 +88,14 @@ const Banner = () => {
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}
-                            className="text-red-500 font-bold text-[22px]"
+                            className="text-red-500 font-bold text-base sm:text-[22px]"
                         />
                     </div>
 
                     {/* Social Handles with premium scale & subtle bounce triggers */}
-                    <div className='flex gap-4 text-center md:text-left md:w-full items-center w-[80%] md:items-start mx-auto'>
-                        <p className='font-semibold text-gray-600 dark:text-gray-300'>Connect :</p>
-                        <div className='flex text-center gap-3 md:gap-4 align-center'>
+                    <div className='flex gap-2 sm:gap-4 text-center md:text-left w-full justify-center md:justify-start items-center mx-auto mt-3'>
+                        <p className='font-semibold text-gray-600 dark:text-gray-300 whitespace-nowrap text-sm sm:text-base'>Connect :</p>
+                        <div className='flex items-center text-center gap-2 sm:gap-4'>
                             <motion.a whileHover={{ scale: 1.15, y: -4 }} whileTap={{ scale: 0.95 }} href="https://www.linkedin.com/in/md-eyasin-arafat-webdev">
                                 <FaLinkedin className='w-8 h-8 p-1.5 rounded-full border border-gray-500 dark:text-black bg-gray-200 hover:bg-[#0077B5] hover:text-white transition-colors duration-500' />
                             </motion.a>
@@ -150,7 +150,7 @@ const Banner = () => {
                     <p className='text-[18px] md:text-[22px] dark:text-white/65 leading-relaxed'>and modern technologies. Transforming ideas into scalable digital solutions.</p>
 
                     {/* Interactive CTA Buttons */}
-                    <div className='mt-8 space-x-5 flex justify-center md:justify-start items-center'>
+                    <div className='mt-8 flex flex-row items-center justify-center md:justify-start gap-2.5 sm:gap-5'>
                         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.98 }}>
                             <Link href='/#projects'><ViewWorkButton /></Link>
                         </motion.div>

@@ -26,9 +26,9 @@ const InfoCard = () => {
           <br />
         </p>
 
-        <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
-          <span className="w-[8px] h-[8px] rounded-full bg-blue-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
-          <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'> Available 9:00 AM – 10:00 PM (GMT+6 / UTC+6)</p>
+        <div className="flex items-center justify-center mx-auto gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium pt-2 whitespace-nowrap">
+          <span className="w-[7px] h-[7px] sm:w-[8px] sm:h-[8px] shrink-0 rounded-full bg-blue-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
+          <p className='text-gray-500 dark:text-white/75 text-[11px] sm:text-xs font-medium whitespace-nowrap'>Available 9:00 AM – 10:00 PM (GMT+6 / UTC+6)</p>
         </div>
       </div>
 
@@ -48,9 +48,9 @@ const InfoCard = () => {
           <br />
         </p>
 
-        <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
-          <span className="w-[8px] h-[8px] rounded-full bg-orange-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
-          <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'> Reply within 24 hours </p>
+        <div className="flex items-center justify-center mx-auto gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium pt-2 whitespace-nowrap">
+          <span className="w-[7px] h-[7px] sm:w-[8px] sm:h-[8px] shrink-0 rounded-full bg-orange-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
+          <p className='text-gray-500 dark:text-white/75 text-[11px] sm:text-xs font-medium whitespace-nowrap'>Reply within 24 hours</p>
         </div>
       </div>
 
@@ -72,9 +72,9 @@ const InfoCard = () => {
           <br />
         </p>
 
-        <div className="flex items-center mx-auto gap-2 text-xs font-medium pt-2">
-          <span className="w-[8px] h-[8px] rounded-full bg-green-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
-          <p className='text-gray-500 dark:text-white/75 leading-relaxed text-xs font-medium'>Available for <span className='font-extrabold'>REMOTE</span> Work in WorldWide</p>
+        <div className="flex items-center justify-center mx-auto gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium pt-2 whitespace-nowrap">
+          <span className="w-[7px] h-[7px] sm:w-[8px] sm:h-[8px] shrink-0 rounded-full bg-green-500 shadow-[0_0_15px_#22c55e] animate-pulse" />
+          <p className='text-gray-500 dark:text-white/75 text-[11px] sm:text-xs font-medium whitespace-nowrap'>Available for <span className='font-extrabold'>REMOTE</span> Work Worldwide</p>
         </div>
       </div>
     </div>

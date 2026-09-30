@@ -8,38 +8,81 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const FormSection = () => {
   const [loading, setLoading] = useState(false); 
+  const [emailError, setEmailError] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setEmailError(false);
 
     const formData = new FormData(e.target);
+    const name = formData.get("name")?.trim();
+    const email = formData.get("email")?.trim();
+    const subject = formData.get("subject")?.trim();
+    const message = formData.get("message")?.trim();
+
+    // 1. Email format regex validation
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email || !emailRegex.test(email)) {
+      setLoading(false);
+      setEmailError(true);
+      toast.error("Please enter a valid email address.", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+      return;
+    }
+
+    // 2. Check for common domain typos (e.g., gmail.co, gamil.com, etc.)
+    const domain = email.split("@")[1]?.toLowerCase();
+    const typoDomains = ["gmail.co", "gamil.com", "gmal.com", "gmail.con", "yahoo.co", "hotmail.co", "yaho.com"];
+    if (domain && typoDomains.includes(domain)) {
+      setLoading(false);
+      setEmailError(true);
+      toast.error("Invalid email address!", {
+        position: "top-right",
+        autoClose: 3000,
+      });
+      return;
+    }
 
     try {
-      const response = await fetch("https://formspree.io/f/mbdnzpyg", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: formData,
         headers: {
+          "Content-Type": "application/json",
           Accept: "application/json",
         },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "69f2a74d-9b7b-4aeb-9c87-04292050e416",
+          name: name,
+          email: email,
+          replyto: email,
+          subject: subject || `New Inquiry from ${name}`,
+          message: message,
+          from_name: `${name} (Portfolio Client)`,
+        }),
       });
 
-      if (response.ok) {
-        e.target.reset(); 
-        toast.success("Thank you! Your message has been sent successfully.", {
+      const result = await res.json();
+
+      if (res.ok && result.success) {
+        e.target.reset();
+        toast.success("Message sent successfully!", {
           position: "top-right",
-          autoClose: 4000, 
+          autoClose: 3500,
         });
       } else {
-        toast.error("Oops! Something went wrong. Please try again.", {
+        toast.error(result.message || "Something went wrong.", {
           position: "top-right",
-          autoClose: 4000,
+          autoClose: 3500,
         });
       }
     } catch (err) {
-      toast.error("Network error! Please check your connection.", {
+      console.error("Contact submit error:", err);
+      toast.error(err.message || "Network error! Try again.", {
         position: "top-right",
-        autoClose: 4000,
+        autoClose: 3500,
       });
     } finally {
       setLoading(false);
@@ -49,7 +92,12 @@ const FormSection = () => {
   return (
     <div className="lg:col-span-2 bg-white dark:bg-black order-2 lg:order-1 rounded-2xl shadow-sm border border-gray-100 dark:border-zinc-800 p-8 relative">
       
-      <ToastContainer autoClose={4000} />
+      <ToastContainer 
+        position="top-right" 
+        autoClose={3500} 
+        toastStyle={{ fontSize: '13px', padding: '10px 14px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }}
+        style={{ width: 'auto', maxWidth: '300px', right: '12px', top: '12px' }}
+      />
       
       <div className="flex items-center gap-3 mb-8">
         <Mail className="text-red-500 w-6 h-6" />
@@ -75,7 +123,12 @@ const FormSection = () => {
             name="email" 
             placeholder="john@example.com"
             required 
-            className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all bg-gray-50 mb-3 dark:bg-slate-500/70" 
+            onChange={() => setEmailError(false)}
+            className={`w-full px-4 py-3 rounded-lg border outline-none transition-all bg-gray-50 mb-3 dark:bg-slate-500/70 ${
+              emailError 
+                ? "border-red-500 border-2 focus:ring-2 focus:ring-red-500" 
+                : "border-gray-200 focus:ring-2 focus:ring-red-500 focus:border-transparent"
+            }`} 
           />
         </div>
 

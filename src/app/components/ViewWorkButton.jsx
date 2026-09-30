@@ -8,7 +8,7 @@ const ViewWorkButton = () => {
             initial="initial"
             whileHover="hover"
             animate="initial"
-            className="group relative cursor-pointer flex items-center gap-3 px-5 py-3 bg-white text-red-500 font-bold text-[14px] rounded-full border-2 hover:border-red-600 overflow-hidden shadow-lg transition-all"
+            className="group relative cursor-pointer flex items-center gap-2 sm:gap-3 px-3.5 sm:px-5 py-2.5 sm:py-3 bg-white text-red-500 font-bold text-xs sm:text-[14px] rounded-full border-2 hover:border-red-600 overflow-hidden shadow-lg transition-all whitespace-nowrap"
         >
             {/* Background Animation */}
             <motion.div
@@ -26,7 +26,7 @@ const ViewWorkButton = () => {
                     initial: { color: "#EF4444" },
                     hover: { color: "#FFFFFF" }
                 }}
-                className="relative z-10"
+                className="relative z-10 whitespace-nowrap"
             >
                 View My Work
             </motion.span>

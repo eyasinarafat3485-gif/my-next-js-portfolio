@@ -15,7 +15,7 @@ const CraftedProjects = () => {
                 className="mb-12"
             >
                 <p className="text-[15px] font-bold tracking-widest uppercase text-gray-800 dark:text-orange-500 ">My previous</p>
-                <h2 className="text-3xl md:text-4xl font-bold mt-2">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2">
                     Crafted <span className="text-red-500">Projects</span>
                 </h2>
                 <p className="text-gray-500 dark:text-white/65 mt-4 max-w-2xl text-[18px]">
@@ -40,7 +40,7 @@ const CraftedProjects = () => {
                                 <span className="px-3 py-1 bg-gray-50 rounded-full text-xs text-gray-400 font-semibold border dark:bg-black/65 dark:border-white/65 dark:text-orange-500">My Service</span>
                                 <span className="text-red-400 text-xs font-bold">• {project.id}</span>
                             </div>
-                            <h3 className="text-2xl font-bold text-slate-800 dark:text-white/75 mb-4">{project.title}</h3>
+                            <h3 className="text-xl sm:text-2xl font-bold text-slate-800 dark:text-white/75 mb-4">{project.title}</h3>
                             <p className="text-gray-500 leading-relaxed mb-6">{project.description}</p>
 
                             {/* Tags */}

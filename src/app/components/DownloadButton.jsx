@@ -17,21 +17,21 @@ const DownloadButton = () => {
     };
     return (
         <motion.button onClick={() => handleDownloadCv()} initial="initial" whileHover="hover" animate="initial"
-            className="group relative cursor-pointer flex items-center gap-3 px-5.5 py-3 bg-red-500 text-white font-bold text-[14px]  rounded-full border-2 border-red-500 overflow-hidden transition-colors duration-300 shadow-lg" >
+            className="group relative cursor-pointer flex items-center gap-2 sm:gap-3 px-3.5 sm:px-5.5 py-2.5 sm:py-3 bg-red-500 text-white font-bold text-xs sm:text-[14px] rounded-full border-2 border-red-500 overflow-hidden transition-colors duration-300 shadow-lg whitespace-nowrap" >
 
             <motion.div variants={{ initial: { x: "-100%" }, hover: { x: 0 } }} transition={{ duration: 0.4, ease: "easeInOut" }}className="absolute inset-0 bg-white z-0"/>
 
-            <div className="relative z-10 w-5 h-5 overflow-hidden">
+            <div className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 overflow-hidden">
                 <motion.div variants={{ initial: { y: 0 }, hover: { y: 30 } }} transition={{ duration: 0.3 }}className="absolute inset-0 flex items-center justify-center" >
-                    <Download size={20} />
+                    <Download size={18} />
                 </motion.div>
 
                 <motion.div variants={{ initial: { y: -30 },hover: { y: 0 }}} transition={{ duration: 0.3 }}className="absolute inset-0 flex items-center justify-center text-[#EF4444]">
-                    <Download size={20} />
+                    <Download size={18} />
                 </motion.div>
             </div>
 
-            <motion.span variants={{ initial: { color: "#FFFFFF" }, hover: { color: "#EF4444" } }}className="relative z-10" >
+            <motion.span variants={{ initial: { color: "#FFFFFF" }, hover: { color: "#EF4444" } }} className="relative z-10 whitespace-nowrap" >
                 Download Resume
             </motion.span>
         </motion.button>

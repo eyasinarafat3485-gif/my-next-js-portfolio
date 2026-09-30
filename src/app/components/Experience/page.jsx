@@ -30,57 +30,17 @@ const Experience = () => {
           EXPERIENCE
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2">
           Professional <span className="text-red-500">Experience</span>
         </h2>
       </div>
 
       {/* Experience Cards */}
       <div className="space-y-6">
-
-        {/* 1 */}
-        {/* <motion.div
-          {...fadeInUp}
-          whileHover={{ x: 6 }} // Interactivity build up
-          className="relative bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 p-4 md:p-8 hover:shadow-md transition-all duration-300 overflow-hidden"
-        > */}
-        {/* Professional Left Progress Border Layer */}
-        {/* <motion.div
-            variants={borderVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="absolute left-0 top-0 w-1 bg-red-500 origin-top"
-          /> */}
-
-        {/* <div className="flex justify-between items-start mb-6">
-            <div>
-              <h2 className="text-[27px] font-bold text-slate-800 dark:text-orange-500">
-                 Full Stack Developer 
-              </h2>
-
-              <p className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold">
-                Bengal-IT
-              </p>
-            </div>
-
-            <div className="text-right">
-              <p className="text-red-500 font-semibold">Now</p>
-            </div>
-          </div> */}
-
-        {/* <p className="text-gray-500 leading-relaxed">
-            I worked at Bengal-IT as a Full Stack Developer & Software Engineer,
-            where I developed modern unique scalable & role-based SaaS applications, handled theme
-            development, and managed full web app deployment processes.
-          </p> */}
-        {/* </motion.div> */}
-
-        {/* 2 */}
         <motion.div
           {...fadeInUp}
           whileHover={{ x: 6 }}
-          className="relative bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 p-4 md:p-8 hover:shadow-md transition-all duration-300 overflow-hidden"
+          className="relative bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 p-5 md:p-8 hover:shadow-md transition-all duration-300 overflow-hidden"
         >
           {/* Professional Left Progress Border Layer */}
           <motion.div
@@ -91,29 +51,33 @@ const Experience = () => {
             className="absolute left-0 top-0 w-1 bg-red-500 origin-top"
           />
 
-          <div className="flex justify-between items-start mb-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4 mb-4">
             <div>
-              <h2 className="text-[27px] font-bold text-slate-800 dark:text-orange-500">
+              <h2 className="text-lg sm:text-[27px] font-bold text-slate-800 dark:text-orange-500">
                 MERN Stack Developer (Remote)
               </h2>
 
-              <a
-                href="https://bengal-it-eight.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold hover:underline"
-              >
-                Bengal-IT</a> <span className="pt-2">(Mirpur, Dhaka, Bangladesh)</span>
-
-
+              <p className="text-sm sm:text-lg text-gray-700 dark:text-white/75 mt-1 font-semibold">
+                <a
+                  href="https://bengalit.com.bd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline text-red-500 dark:text-red-400 font-bold"
+                >
+                  Bengal-IT
+                </a>{" "}
+                <span className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-normal">(Mirpur, Dhaka, Bangladesh)</span>
+              </p>
             </div>
 
-            <div className="text-right">
-              <p className="text-red-500 font-semibold"> Q2 2026</p>
+            <div className="text-left sm:text-right shrink-0">
+              <span className="inline-block text-xs sm:text-sm font-semibold text-red-500 dark:text-red-400 bg-red-500/20 px-3 py-1 rounded-full whitespace-nowrap">
+                Q2 2025 - Now
+              </span>
             </div>
           </div>
 
-          <p className="text-gray-500 leading-relaxed">
+          <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base leading-relaxed line-clamp-3 sm:line-clamp-none">
             Bengal-it excels in full-stack web development, building robust, scalable, and highly functional web applications. As a Hybrid MERN Stack Developer in Bangladesh, I am eager to leverage modern technologies like MongoDB, Express.js, React.js, and Node.js to develop responsive, pixel-perfect user interfaces and seamless backend architectures.
           </p>
         </motion.div>
@@ -122,7 +86,7 @@ const Experience = () => {
         <motion.div
           {...fadeInUp}
           whileHover={{ x: 6 }}
-          className="relative bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 p-4 md:p-8 hover:shadow-md transition-all duration-300 overflow-hidden"
+          className="relative bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-white/5 p-5 md:p-8 hover:shadow-md transition-all duration-300 overflow-hidden"
         >
           {/* Professional Left Progress Border Layer */}
           <motion.div
@@ -133,30 +97,25 @@ const Experience = () => {
             className="absolute left-0 top-0 w-1 bg-red-500 origin-top"
           />
 
-          <div className="flex justify-between items-start mb-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4 mb-4">
             <div>
-              <h2 className="text-[27px] font-bold text-slate-800 dark:text-orange-500">
-                Wordpress Developer
+              <h2 className="text-lg sm:text-[27px] font-bold text-slate-800 dark:text-orange-500">
+                WordPress Developer
               </h2>
 
-              <span
-
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xl text-gray-700 dark:text-white/75 mt-1 font-bold "
-              >
-                Wordpress Developer</span> <span className="pt-2">(Internship)</span>
-
+              <p className="text-sm sm:text-lg text-gray-700 dark:text-white/75 mt-1 font-semibold">
+                WordPress Development <span className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-normal">(Internship)</span>
+              </p>
             </div>
 
-            <div className="text-right">
-              <p className="text-red-500 font-semibold">
-                Q3 - Q4 2025
-              </p>
+            <div className="text-left sm:text-right shrink-0">
+              <span className="inline-block text-xs sm:text-sm font-semibold text-red-500 dark:text-red-400 bg-red-500/20 px-3 py-1 rounded-full whitespace-nowrap">
+                Q4 2024 - Q1 2025
+              </span>
             </div>
           </div>
 
-          <p className="text-gray-500 leading-relaxed">
+          <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base leading-relaxed line-clamp-3 sm:line-clamp-none">
             This company specializes in WordPress development, crafting visually stunning and highly functional websites. Through my tenure, I have proven a strong track record of executing complex projects with speed, precision, and exceptional quality.
           </p>
         </motion.div>

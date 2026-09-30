@@ -14,8 +14,8 @@ const Service = () => {
           <p className="text-[15px] font-bold tracking-widest uppercase text-gray-800 dark:text-orange-500 ">
             Services
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">
-            How I Assist <span className="text-red-500">My Clients</span><br /> with Web Development
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-2">
+            How I Assist <span className="text-red-500">My Clients</span><br className="hidden sm:inline" /> with Web Development
           </h2>
         </div>
 
@@ -24,14 +24,17 @@ const Service = () => {
           {Servicesdata.map((service, index) => (
             <div
               key={index}
-              className="relative bg-white dark:bg-black rounded-2xl shadow-sm px-6 pt-10 pb-5 max-w-sm text-center cursor-grab transition-all duration-300 border-[1.5px] border-gray-100 hover:border-red-500"
+              className="group relative bg-white dark:bg-black rounded-2xl shadow-sm px-6 pt-10 pb-5 max-w-sm text-center cursor-grab transition-all duration-300 border-[1.5px] border-gray-100 hover:border-red-500"
               onMouseEnter={() => setHoveredIndex(index)} 
               onMouseLeave={() => setHoveredIndex(null)}  
+              onTouchStart={() => setHoveredIndex(index)}
+              onTouchEnd={() => setTimeout(() => setHoveredIndex(null), 1200)}
             >
               {/* Icon Circle */}
               <div
                 className={`w-12 h-12 absolute -top-6 left-1/4 -translate-x-1/2 rounded-full flex items-center justify-center transition-all duration-300 
-                  ${hoveredIndex === index ? "bg-white ring-2 ml-21 ring-red-500" : "bg-red-500"}`}
+                  ${hoveredIndex === index ? "bg-white ring-2 ml-21 ring-red-500" : "bg-red-500"}
+                  group-hover:bg-white group-hover:ring-2 group-hover:ml-21 group-hover:ring-red-500`}
               >
                 {/* Fixed width and height */}
                 <Image 
@@ -41,7 +44,7 @@ const Service = () => {
                   alt={service.title}
                   className={`w-6 h-6 transition-all duration-300
                     ${hoveredIndex === index ? "invert-0" : "invert brightness-0 saturate-0 brightness-200"}
-                  `}
+                    group-hover:invert-0`}
                 />
               </div>
 

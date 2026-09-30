@@ -9,7 +9,7 @@ const LetsWork = () => {
         {/* Header Section */}
         <div className="mb-10">
           <p className="text-black dark:text-orange-500 font-semibold uppercase tracking-wide text-sm">Get In Touch</p>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white light:text-black mt-2 ">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white light:text-black mt-2 ">
             Let,s Work <span className="text-red-500">Together</span>
           </h1>
           <p className="text-gray-500 dark:text-white/65 light:text-black mt-4 text-lg">
